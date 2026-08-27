@@ -1,0 +1,44 @@
+var _____WB$wombat$assign$function_____=function(name){return (globalThis._wb_wombat && globalThis._wb_wombat.local_init && globalThis._wb_wombat.local_init(name))||globalThis[name];};if(!globalThis.__WB_pmw){globalThis.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+/**
+* @package com_speasyimagegallery
+* @author JoomShaper http://www.joomshaper.com
+* @copyright Copyright (c) 2010 - 2020 JoomShaper
+* @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+
+;(function($){
+    $(document).on('click', '.speasyimagegallery-gallery-item', function(event) {
+      event.preventDefault();
+      var spdata = $(this).closest('.speasyimagegallery-gallery');
+      $(this).speasyimagegallery({
+        showTitle: spdata.data('showtitle'),
+        showDescription: spdata.data('showdescription'),
+        showCounter: spdata.data('showcounter')
+      });
+    });
+})(jQuery);
+
+}
+
+/*
+     FILE ARCHIVED ON 14:31:55 Feb 14, 2026 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:53:19 Aug 21, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.752
+  load_resource: 13.509
+  PetaboxLoader3.datanode: 13.022
+*/

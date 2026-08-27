@@ -1,0 +1,170 @@
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item > a,
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item span:not(.sp-menu-badge) {
+	width: 90%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #1a1a1a;
+}
+.sp-megamenu-parent .sp-mega-group > li > a {
+	color: #003082;
+}
+.sp-megamenu-parent .sp-dropdown .sp-module .sp-module-title {
+	color: #003082;
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul > li a,
+.offcanvas-menu .offcanvas-inner .sp-module ul > li span {
+	color: #3497D2d9;
+	/* width: 90%; */
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ec430f26;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item > a,
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item span:not(.sp-menu-badge) {
+	width: 90%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #252525;
+}
+.offcanvas-menu
+	.offcanvas-inner
+	.sp-module
+	ul
+	> li.menu-parent
+	> a
+	> .menu-toggler,
+.offcanvas-menu
+	.offcanvas-inner
+	.sp-module
+	ul
+	> li.menu-parent
+	> .menu-separator
+	> .menu-toggler {
+	color: rgba(97, 97, 97, 0.68);
+}
+#sp-header {
+	background: #003082ba;
+	position: absolute;
+	margin: 0px auto;
+	border-bottom: solid 1px #3497d242;
+}
+
+#sp-header.header-sticky {
+	position: fixed;
+	z-index: 9999;
+	margin-top: auto;
+	background: #003082ea;
+}
+.sp-megamenu-parent > li > a {
+	color: #FFFFFF;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item > a {
+	color: #003082;
+}
+
+.sp-megamenu-parent .sp-dropdown .sp-dropdown-inner {
+	background: #F5F5F5;
+	margin-top: 5px;
+    width: 110%;
+}
+
+.sp-megamenu-parent > li > a,
+.sp-megamenu-parent > li > span {
+	display: inline-block;
+	padding: 0 15px 0 15px;
+	border-left: 1px solid #4444449c;
+	line-height: 35px;
+}
+.sp-megamenu-parent > li.active > a,
+.sp-megamenu-parent > li.active:hover > a {
+	color: #fff500;
+	background-color: #0000003b;
+}
+
+.logo-image {
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.sp-module ul > li > a {
+	color: #003082;
+}
+#offcanvas-toggler > .fa {
+	color: #9e9e9e;
+}
+.sp-page-title {
+	background: #3497D2;
+	margin-top: 65px;
+}
+
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li > a {
+	display: block;
+	padding: 5px 10px;
+	background: #003082;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 0px;
+}
+.sppb-carousel-extended-nav-control .nav-control {
+	cursor: pointer;
+	text-align: center;
+	font-size: 24px;
+	border-radius: 3px;
+	color: #454545;
+	border: 1px solid #262626;
+	transition: 0.35s;
+}
+sp-footer,
+#sp-bottom {
+	background: #0c0c0c;
+	color: #fff;
+}
+.sp-simpleportfolio
+	.sp-simpleportfolio-item
+	.sp-simpleportfolio-overlay-wrapper {
+	border: solid 4px #c5c5c55c;
+}
+.ruxin_news .lead_title,
+.ruxin_news .intro_title,
+.ruxin_news .link_title {
+	color: #757575;
+}
+
+.ruxin_news .leading_news_image.float_left,
+.ruxin_news .intro_news_image.float_left,
+.ruxin_news .link_news_image.float_left {
+	float: left;
+	margin-left: 10px;
+	background-color: #f7f7f7;
+	border: solid 1px #ccc;
+	padding: 5px;
+}
+#sp-top-bar {
+	background: #090909;
+	color: #aaaaaa8f;
+}
+
+.offcanvas-menu {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #252525;
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul > li ul li a {
+	color: rgb(210 210 210 / 80%);
+}
+.burger-icon > span {
+	background-color: #fff;
+}
+
+/*
+     FILE ARCHIVED ON 14:31:56 Feb 14, 2026 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:53:05 Aug 21, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.325
+  load_resource: 37.574
+  PetaboxLoader3.datanode: 37.21
+*/
