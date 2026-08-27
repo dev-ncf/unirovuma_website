@@ -1413,7 +1413,7 @@
                                     </div>
                                 </div>
                                 <div class="k">
-                                    <a href="./manutencao.html""
+                                    <a href="{{route('manutencao')}}"
                                         id="wm-graph-anchor">
                                         <div id="wm-ipp-sparkline" title="Explore captures for this URL"
                                             style="position: relative">
@@ -1467,7 +1467,7 @@
                                     <div id="wm-save-snapshot-success">success</div>
                                     <div id="wm-save-snapshot-fail">fail</div>
                                     <a id="wm-save-snapshot-open"
-                                        href="./manutencao.html"#"
+                                        href="{{route('manutencao')}}#"
                                         title="Share via My Web Archive" style="display: none;">
                                         <span class="iconochive-web"></span>
                                     </a>
@@ -1483,33 +1483,33 @@
                                         class="iconochive-question"
                                         style="color:rgb(87,186,244);font-size:160%;"></span></a>
                                 <a id="wm-tb-close"
-                                    href="./manutencao.html"#close"
+                                    href="{{route('manutencao')}}#close"
                                     style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle"
                                         style="color:#888888;font-size:240%;"></span></a>
                             </div>
                             <div id="wm-share" class="xxs">
-                                <a href="http://web.archive.org/screenshot/https://unirovuma.ac.mz/"
+                                <a href="https://unirovuma.ac.mz/"
                                     id="wm-screenshot" title="screenshot" style="visibility: hidden;">
                                     <span class="wm-icon-screen-shot"></span>
                                 </a>
-                                <a href="./manutencao.html"#"
+                                <a href="{{route('manutencao')}}"
                                     id="wm-video" title="video">
                                     <span class="iconochive-movies"></span>
                                 </a>
                                 <a id="wm-share-facebook"
-                                    href="./manutencao.html"#"
-                                    data-url="./manutencao.html""
+                                    href="{{route('manutencao')}}"
+                                    data-url="{{route('manutencao')}}"
                                     title="Share on Facebook" style="margin-right:5px;" target="_blank"><span
                                         class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
                                 <a id="wm-share-twitter"
-                                    href="./manutencao.html"#"
-                                    data-url="./manutencao.html""
+                                    href="{{route('manutencao')}}"
+                                    data-url="{{route('manutencao')}}"
                                     title="Share on Twitter" style="margin-right:5px;" target="_blank"><span
                                         class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
                             </div>
                             <div style="padding-right:2px;text-align:right;white-space:nowrap;">
                                 <a id="wm-expand" class="wm-btn wm-closed"
-                                    href="./manutencao.html"#expand"><span
+                                    href="{{route('manutencao')}}"><span
                                         id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs"
                                         style="font-size:80%;">About this capture</span></a>
                             </div>
@@ -1557,17 +1557,7 @@
             <div class="wb-autocomplete-suggestions "></div>
         </template>
     </div>
-    <div id="wm-ipp-print">The Wayback Machine - ./manutencao.html"
-    </div>
-    <script type="text/javascript">//<![CDATA[
-        __wm.bt(775, 27, 25, 2, "web", "https://unirovuma.ac.mz/", "20260516144145", 1996, "https://web-static.archive.org/_static/", ["https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3", "https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv"], false);
-        __wm.rw(1);
-        //]]></script>
-    <!-- END WAYBACK TOOLBAR INSERT -->
-
-
-
-
+   
     <div class="body-wrapper">
         <div class="body-innerwrapper">
 
@@ -1581,7 +1571,7 @@
                                 <div class="sp-column">
 
                                     <div class="logo"><a
-                                            href="./manutencao.html">
+                                            href="{{ route('manutencao') }}">
                                             <img class="logo-image "
                                                 src="{{asset('Universidade Rovuma - home_files/logotipo-unirovuma.fw.png')}}"
                                                 height="80px" alt="Logótipo UniRovuma">
@@ -1599,10 +1589,10 @@
                                             <ul class="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block">
                                                 <li class="sp-menu-item ">
                                                     <span class=" current-item active"><a aria-current="page"
-                                                            href="./manutencao.html"index.php">Início</a></span>
+                                                            href="{{ route('manutencao') }}">Início</a></span>
                                                 </li>
                                                 <li class="sp-menu-item sp-has-child"><a
-                                                        href="./manutencao.html"#">Institucional</a>
+                                                        href="{{ route('manutencao') }}">Institucional</a>
                                                     <div class="sp-dropdown sp-dropdown-main sp-dropdown-mega sp-menu-right"
                                                         style="width: 600px;">
                                                         <div class="sp-dropdown-inner">
@@ -1621,14 +1611,14 @@
                                                                                 <div class="sp-module-content">
                                                                                     <ul class="menu">
                                                                                         <li class="item-424"><a
-                                                                                                href="./manutencao.html"#">Reitor</a>
+                                                                                                href="{{ route('manutencao') }}#">Reitor</a>
                                                                                         </li>
                                                                                         <li class="item-425"><a
-                                                                                                href="./manutencao.html"index.php/gabinetes-de-apoio-e-assessoria-ao-reitor">Gabinetes
+                                                                                                href="{{ route('manutencao') }}/gabinetes-de-apoio-e-assessoria-ao-reitor">Gabinetes
                                                                                                 de Apoio e Assessoria ao
                                                                                                 Reitor</a></li>
                                                                                         <li class="item-426"><a
-                                                                                                href="./manutencao.html"#">Secretaria
+                                                                                                href="{{ route('manutencao') }}#">Secretaria
                                                                                                 Geral</a></li>
                                                                                     </ul>
                                                                                 </div>
@@ -1651,10 +1641,10 @@
                                                                                 <div class="sp-module-content">
                                                                                     <ul class="menu">
                                                                                         <li class="item-427"><a
-                                                                                                href="./manutencao.html"#">Vice-Reitor
+                                                                                                href="{{ route('manutencao') }}">Vice-Reitor
                                                                                                 Académico</a></li>
                                                                                         <li class="item-428"><a
-                                                                                                href="./manutencao.html"#">Vice-Reitor
+                                                                                                href="{{ route('manutencao') }}">Vice-Reitor
                                                                                                 Administrativo</a></li>
                                                                                     </ul>
                                                                                 </div>
@@ -1667,7 +1657,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="sp-menu-item sp-has-child"><a
-                                                        href="./manutencao.html"#">A
+                                                        href="{{ route('manutencao') }}">A
                                                         UniRovuma</a>
                                                     <div class="sp-dropdown sp-dropdown-main sp-dropdown-mega sp-menu-center"
                                                         style="width: 1000px;left: -500px;">
@@ -1677,42 +1667,42 @@
                                                                     <ul class="sp-mega-group">
                                                                         <li class="item-122 menu_item item-header"><a
                                                                                 class="sp-group-title"
-                                                                                href="./manutencao.html"#">Ensino</a>
+                                                                                href="{{ route('manutencao') }}">Ensino</a>
                                                                             <ul
                                                                                 class="sp-mega-group-child sp-dropdown-items">
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Graduação</a>
+                                                                                        href="{{ route('manutencao') }}">Graduação</a>
                                                                                 </li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Pós-Graduação</a>
+                                                                                        href="{{ route('manutencao') }}">Pós-Graduação</a>
                                                                                 </li>
                                                                                 <li class="sp-menu-item"><a
                                                                                         rel="noopener noreferrer"
-                                                                                        href="./manutencao.html"index.php/mega/ensino/cursos"
+                                                                                        href="{{ route('manutencao') }}"
                                                                                         target="_blank">Cursos</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Admissão
+                                                                                        href="{{ route('manutencao') }}">Admissão
                                                                                         aos cursos</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Especialização</a>
+                                                                                        href="{{ route('manutencao') }}">Especialização</a>
                                                                                 </li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/mega/ensino/portal-do-estudante">Portal
+                                                                                        href="{{ route('manutencao') }}">Portal
                                                                                         do Estudante</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Bolsas
+                                                                                        href="{{ route('manutencao') }}">Bolsas
                                                                                         de Estudo</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Corpo
+                                                                                        href="{{ route('manutencao') }}">Corpo
                                                                                         Docente</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/mega/ensino/futuros-estudantes">Futuros
+                                                                                        href="{{ route('manutencao') }}">Futuros
                                                                                         Estudantes</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/mega/ensino/apoio-a-aprendizagem">Apoio
+                                                                                        href="{{ route('manutencao') }}">Apoio
                                                                                         à Aprendizagem</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">UniRovuma
+                                                                                        href="{{ route('manutencao') }}">UniRovuma
                                                                                         em Números</a></li>
                                                                             </ul>
                                                                         </li>
@@ -1722,14 +1712,14 @@
                                                                     <ul class="sp-mega-group">
                                                                         <li class="item-125 menu_item item-header"><a
                                                                                 class="sp-group-title"
-                                                                                href="./manutencao.html"#">FACULDADES</a>
+                                                                                href="{{ route('manutencao') }}">FACULDADES</a>
                                                                             <ul
                                                                                 class="sp-mega-group-child sp-dropdown-items">
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Faculdade
+                                                                                        href="{{ route('manutencao') }}">Faculdade
                                                                                         de Ciências</a></li>
                                                                                 <li class="sp-menu-item sp-has-child"><a
-                                                                                        href="./manutencao.html"index.php/mega/layout-builder/mega-menu-generator">Faculdade
+                                                                                        href="{{ route('manutencao') }}">Faculdade
                                                                                         de Engenharia</a>
                                                                                     <div class="sp-dropdown sp-dropdown-sub sp-menu-right"
                                                                                         style="width: 240px;">
@@ -1739,7 +1729,7 @@
                                                                                                 <li
                                                                                                     class="sp-menu-item">
                                                                                                     <a
-                                                                                                        href="./manutencao.html"index.php/mega/layout-builder/mega-menu-generator/projecto-de-solucoes-de-iluminacao">Projecto
+                                                                                                        href="{{ route('manutencao') }}">Projecto
                                                                                                         de soluções de
                                                                                                         iluminação </a>
                                                                                                 </li>
@@ -1748,29 +1738,29 @@
                                                                                     </div>
                                                                                 </li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Faculdade
+                                                                                        href="{{ route('manutencao') }}">Faculdade
                                                                                         de Ciências Alimentares e
                                                                                         Agrárias</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Faculdade
+                                                                                        href="{{ route('manutencao') }}">Faculdade
                                                                                         de Ciências Económicas e
                                                                                         Empresarias</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Faculdade
+                                                                                        href="{{ route('manutencao') }}">Faculdade
                                                                                         de Direito</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/mega/layout-builder/faculdade-de-letras">Faculdade
+                                                                                        href="{{ route('manutencao') }}">Faculdade
                                                                                         de Letras</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/mega/layout-builder/faculdade-de-ciencias-sociais-e-filosofia">Faculdade
+                                                                                        href="{{ route('manutencao') }}">Faculdade
                                                                                         de Ciências Sociais e
                                                                                         Filosofia</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Faculdade
+                                                                                        href="{{ route('manutencao') }}">Faculdade
                                                                                         de Ciências de Desporto</a></li>
                                                                                 <li class="sp-menu-item"><a
                                                                                         rel="noopener noreferrer"
-                                                                                        href="./manutencao.html"index.php/mega/layout-builder/faculdade-de-educacao-e-psicologia"
+                                                                                        href="{{ route('manutencao') }}"
                                                                                         target="_blank">Faculdade de
                                                                                         Educação e Psicologia</a></li>
                                                                             </ul>
@@ -1781,51 +1771,51 @@
                                                                     <ul class="sp-mega-group">
                                                                         <li class="item-124 menu_item item-header"><a
                                                                                 class="sp-group-title"
-                                                                                href="./manutencao.html"#">CENTROS
+                                                                                href="{{ route('manutencao') }}">CENTROS
                                                                                 DE ESTUDO</a>
                                                                             <ul
                                                                                 class="sp-mega-group-child sp-dropdown-items">
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Formação Técnico
                                                                                         Profissional</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudo em Governação,
                                                                                         Conflitos e Direitos Humanos</a>
                                                                                 </li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudo de Ciências Aplicadas,
                                                                                         Inovação e Transferência de
                                                                                         Tecnologia</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudo em Políticas e
                                                                                         Práticas Educativas</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudo em Psicologia
                                                                                         Aplicada</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudo em Territórios,
                                                                                         Ambiente e Recursos Naturais</a>
                                                                                 </li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/mega/easy-customization/centro-de-estudos-linguisticos-e-culturais">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudos Linguísticos e
                                                                                         Culturais</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Prática e Treinamento
                                                                                         Desportivo</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/mega/easy-customization/centro-de-producao-e-processamento-de-alimentos">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Produção e Processamento de
                                                                                         Alimentos</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/mega/easy-customization/centro-de-producao">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         De Produção E Processamento De
                                                                                         Alimentos</a></li>
                                                                             </ul>
@@ -1836,34 +1826,34 @@
                                                                     <ul class="sp-mega-group">
                                                                         <li class="item-123 menu_item item-header"><a
                                                                                 class="sp-group-title"
-                                                                                href="./manutencao.html"#">DIRECÇÕES
+                                                                                href="{{ route('manutencao') }}">DIRECÇÕES
                                                                                 CENTRAIS</a>
                                                                             <ul
                                                                                 class="sp-mega-group-child sp-dropdown-items">
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Direcção
+                                                                                        href="{{ route('manutencao') }}">Direcção
                                                                                         de Recursos Humanos</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Direcção
+                                                                                        href="{{ route('manutencao') }}">Direcção
                                                                                         de Finanças</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Direcção
+                                                                                        href="{{ route('manutencao') }}">Direcção
                                                                                         de Património</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Direcção
+                                                                                        href="{{ route('manutencao') }}">Direcção
                                                                                         de Tecnologias de Informação e
                                                                                         Comunicação</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Direcção
+                                                                                        href="{{ route('manutencao') }}">Direcção
                                                                                         de Licitação</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Direcção
+                                                                                        href="{{ route('manutencao') }}">Direcção
                                                                                         do Registo Académico</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Direcção
+                                                                                        href="{{ route('manutencao') }}">Direcção
                                                                                         Pedagógica</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Direcção
+                                                                                        href="{{ route('manutencao') }}">Direcção
                                                                                         Científica</a></li>
                                                                             </ul>
                                                                         </li>
@@ -1882,7 +1872,7 @@
                                                                                     <ul class="latestnews ">
                                                                                         <li>
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/unidades-especiais/editora-e-imprensa-universitaria">
+                                                                                                href="{{ route('manutencao') }}">
                                                                                                 editora <span>27 January
                                                                                                     2026</span>
                                                                                             </a>
@@ -1908,25 +1898,25 @@
                                                     </div>
                                                 </li>
                                                 <li class="sp-menu-item sp-has-child"><a
-                                                        href="./manutencao.html"#">Institutos</a>
+                                                        href="{{ route('manutencao') }}">Institutos</a>
                                                     <div class="sp-dropdown sp-dropdown-main sp-menu-right"
                                                         style="width: 240px;">
                                                         <div class="sp-dropdown-inner">
                                                             <ul class="sp-dropdown-items">
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"#">Instituto
+                                                                        href="{{ route('manutencao') }}">Instituto
                                                                         Superior de Desenvolvimento Rural e
                                                                         Biociências</a></li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"#">Instituto
+                                                                        href="{{ route('manutencao') }}">Instituto
                                                                         Superior de Recursos Naturais e Ambiente</a>
                                                                 </li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"index.php/institutos/instituto-superior-de-transportes-logistica-e-telecomunicacoes">Instituto
+                                                                        href="{{ route('manutencao') }}">Instituto
                                                                         Superior de Transportes, Logística e
                                                                         Telecomunicações</a></li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"index.php/institutos/instituto-superior-de-educacao-aberta-e-a-distancia">Instituto
+                                                                        href="{{ route('manutencao') }}">Instituto
                                                                         Superior de Educação Aberta e à Distância</a>
                                                                 </li>
                                                             </ul>
@@ -1934,33 +1924,33 @@
                                                     </div>
                                                 </li>
                                                 <li class="sp-menu-item sp-has-child"><a
-                                                        href="./manutencao.html"#">Unidades
+                                                        href="{{ route('manutencao') }}">Unidades
                                                         Especiais</a>
                                                     <div class="sp-dropdown sp-dropdown-main sp-menu-right"
                                                         style="width: 240px;">
                                                         <div class="sp-dropdown-inner">
                                                             <ul class="sp-dropdown-items">
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"index.php/unidades-especiais/editora-e-imprensa-universitaria">Editora
+                                                                        href="{{ route('manutencao') }}">Editora
                                                                         e Imprensa Universitária</a></li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"#">Serviços
+                                                                        href="{{ route('manutencao') }}">Serviços
                                                                         de Documentação e Informação</a></li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"#">Serviço
+                                                                        href="{{ route('manutencao') }}">Serviço
                                                                         de Acção Social</a></li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"#">Serviços
+                                                                        href="{{ route('manutencao') }}">Serviços
                                                                         Especiais Integrados</a></li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"#">Centro
+                                                                        href="{{ route('manutencao') }}">Centro
                                                                         Cultural da Universidade Rovuma</a></li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"#">Centro
+                                                                        href="{{ route('manutencao') }}">Centro
                                                                         de Desenvolvimento de Infra-Estruturas
                                                                         Universitárias</a></li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"#">Centro
+                                                                        href="{{ route('manutencao') }}">Centro
                                                                         de Desenvolvimento de Sistemas de Gestão
                                                                         Universitária</a></li>
                                                             </ul>
@@ -1968,57 +1958,57 @@
                                                     </div>
                                                 </li>
                                                 <li class="sp-menu-item sp-has-child"><a
-                                                        href="./manutencao.html"#">Pesquisa</a>
+                                                        href="{{ route('manutencao') }}">Pesquisa</a>
                                                     <div class="sp-dropdown sp-dropdown-main sp-menu-right"
                                                         style="width: 240px;">
                                                         <div class="sp-dropdown-inner">
                                                             <ul class="sp-dropdown-items">
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"index.php/pesquisa/politica-de-pesquisa">Política
+                                                                        href="{{ route('manutencao') }}">Política
                                                                         de Pesquisa</a></li>
                                                                 <li class="sp-menu-item sp-has-child"><a
-                                                                        href="./manutencao.html"#">Centros
+                                                                        href="{{ route('manutencao') }}">Centros
                                                                         de Pesquisa</a>
                                                                     <div class="sp-dropdown sp-dropdown-sub sp-menu-right"
                                                                         style="width: 240px;">
                                                                         <div class="sp-dropdown-inner">
                                                                             <ul class="sp-dropdown-items">
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudo em Governação,
                                                                                         Conflitos e Direitos Humanos</a>
                                                                                 </li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudo de Ciências Aplicadas,
                                                                                         Inovação e Transferência de
                                                                                         Tecnologia</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudo em Políticas e
                                                                                         Práticas Educativas</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudo em Psicologia
                                                                                         Aplicada</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudo em Territórios,
                                                                                         Ambiente e Recursos Naturais</a>
                                                                                 </li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">UniRovuma
+                                                                                        href="{{ route('manutencao') }}">UniRovuma
                                                                                         Business Center</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/pesquisa/centros-de-pesquisa/centro-de-estudos-linguisticos-e-culturais">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Estudos Linguísticos e
                                                                                         Culturais</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Prática e Treinamento
                                                                                         Desportivo</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/pesquisa/centros-de-pesquisa/centro-de-producao-e-processamento-de-alimentos">Centro
+                                                                                        href="{{ route('manutencao') }}">Centro
                                                                                         de Produção e Processamento de
                                                                                         Alimentos</a></li>
                                                                             </ul>
@@ -2026,24 +2016,24 @@
                                                                     </div>
                                                                 </li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"#">Pesquisadores</a>
+                                                                        href="{{ route('manutencao') }}">Pesquisadores</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li class="sp-menu-item sp-has-child"><a
-                                                        href="./manutencao.html"#">Serviços
+                                                        href="{{ route('manutencao') }}">Serviços
                                                         Online</a>
                                                     <div class="sp-dropdown sp-dropdown-main sp-menu-right"
                                                         style="width: 240px;">
                                                         <div class="sp-dropdown-inner">
                                                             <ul class="sp-dropdown-items">
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"#">Provedor
+                                                                        href="{{ route('manutencao') }}">Provedor
                                                                         do Estudante</a></li>
                                                                 <li class="sp-menu-item sp-has-child"><a
-                                                                        href="./manutencao.html"#">Repositório</a>
+                                                                        href="{{ route('manutencao') }}">Repositório</a>
                                                                     <div class="sp-dropdown sp-dropdown-sub sp-menu-right"
                                                                         style="width: 240px;">
                                                                         <div class="sp-dropdown-inner">
@@ -2054,11 +2044,11 @@
                                                                                         target="_blank">RECIMO –
                                                                                         Publicações Científicas</a></li>
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"#">Repositório
+                                                                                        href="{{ route('manutencao') }}">Repositório
                                                                                         Institucional</a></li>
                                                                                 <li class="sp-menu-item"><a
                                                                                         rel="noopener noreferrer"
-                                                                                        href="./manutencao.html"index.php/a-unirovuma/repositorio/biblioteca-digital"
+                                                                                        href="{{ route('manutencao') }}"
                                                                                         target="_blank">Biblioteca
                                                                                         Digital</a></li>
                                                                                 <li class="sp-menu-item"><a
@@ -2068,7 +2058,12 @@
                                                                                         Revista Científica</a></li>
                                                                                 <li class="sp-menu-item"><a
                                                                                         rel="noopener noreferrer"
-                                                                                        href="./manutencao.html"index.php/a-unirovuma/repositorio/exames-de-admissao"
+                                                                                        href="{{ route('manutencao') }}"
+                                                                                        target="_blank">Exames de
+                                                                                        Admissão</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>  
                                                                                         target="_blank">Exames de
                                                                                         Admissão</a></li>
                                                                             </ul>
@@ -2084,30 +2079,32 @@
                                                                         target="_blank">Sistema de Gestão de Inscrição
                                                                         de Mestrandos</a></li>
                                                                 <li class="sp-menu-item"><a rel="noopener noreferrer"
-                                                                        href="./manutencao.html"index.php/a-unirovuma/boletim-informativo"
+                                                                        href="{{ route('manutencao') }}"
                                                                         target="_blank">Boletim Informativo</a></li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"index.php/a-unirovuma/acesso-restrito">Acesso
+                                                                        href="{{ route('manutencao') }}">
+                                                                        Acesso
                                                                         Restrito</a></li>
                                                                 <li class="sp-menu-item"><a rel="noopener noreferrer"
-                                                                        href="./manutencao.html"index.php/a-unirovuma/laboratorios-virtuais"
+                                                                        href="{{ route('manutencao') }}"
                                                                         target="_blank">Laboratórios Virtuais</a></li>
                                                                 <li class="sp-menu-item sp-has-child"><a
-                                                                        href="./manutencao.html"index.php/a-unirovuma/programa-de-mobilidade">programa
+                                                                        href="{{ route('manutencao') }}">
+                                                                        programa
                                                                         de mobilidade</a>
                                                                     <div class="sp-dropdown sp-dropdown-sub sp-menu-right"
                                                                         style="width: 240px;">
                                                                         <div class="sp-dropdown-inner">
                                                                             <ul class="sp-dropdown-items">
                                                                                 <li class="sp-menu-item"><a
-                                                                                        href="./manutencao.html"index.php/a-unirovuma/programa-de-mobilidade/bolsas-erasmus">Bolsas
+                                                                                        href="{{ route('manutencao') }}" target="_blank">Bolsas
                                                                                         Erasmus</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
                                                                 </li>
                                                                 <li class="sp-menu-item"><a
-                                                                        href="./manutencao.html"index.php/a-unirovuma/projecto-sportocon">Projecto
+                                                                        href="{{ route('manutencao') }}" target="_blank">Projecto
                                                                         sportocon</a></li>
                                                             </ul>
                                                         </div>
@@ -2115,7 +2112,7 @@
                                                 </li>
                                             </ul><a id="offcanvas-toggler" aria-label="Menu"
                                                 class="offcanvas-toggler-right"
-                                                href="./manutencao.html"#">
+                                                href="{{ route('manutencao') }}#">
                                                 <div class="burger-icon" aria-hidden="true">
                                                     <span></span><span></span><span></span></div>
                                             </a>
@@ -2145,7 +2142,7 @@
                                     <!-- if offcanvas position right -->
                                     <a id="offcanvas-toggler" aria-label="Menu" title="Menu"
                                         class="mega_offcanvas offcanvas-toggler-secondary offcanvas-toggler-right d-flex align-items-center"
-                                        href="./manutencao.html"#">
+                                        href="{{ route('manutencao') }}">
                                         <div class="burger-icon"><span></span><span></span><span></span></div>
                                     </a>
                                 </div>
@@ -2432,7 +2429,7 @@
 
                                                                 <div class="flex flex-wrap gap-4 pt-4">
                                                                     <!-- Botão para a Página Criada (Primário) -->
-                                                                    <a href="./manutencao.html"index.php/a-unirovuma/programa-de-mobilidade"
+                                                                    <a href="{{route('manutencao')}}"index.php/a-unirovuma/programa-de-mobilidade"
                                                                         class="bg-white text-[#00225a] px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold hover:bg-orange-500 hover:text-white transition-all shadow-2xl text-sm md:text-base flex items-center">
                                                                         <i class="fas fa-info-circle mr-2"></i> Ver
                                                                         Detalhes do Programa
@@ -2467,7 +2464,7 @@
                                                                         requisitos.</strong>
                                                                 </p>
                                                                 <div class="flex flex-wrap gap-4 pt-4">
-                                                                    <a href="./manutencao.html"images/Edital%20Novos%20Ingressos%202026.pdf"
+                                                                    <a href="{{route('manutencao')}}"images/Edital%20Novos%20Ingressos%202026.pdf"
                                                                         download="" target="_blank"
                                                                         class="bg-white text-[#00225a] px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold hover:bg-orange-500 hover:text-white transition-all shadow-2xl text-sm md:text-base">
                                                                         Baixar o Edital
@@ -2572,7 +2569,7 @@
                                                                 <div class="flex flex-wrap gap-4 pt-4">
 
                                                                     <!-- Botão Ver Edital (Link para o PDF ou Página de Detalhes) -->
-                                                                    <a href="./manutencao.html"index.php/a-unirovuma/programa-de-mobilidade/bolsas-erasmus"
+                                                                    <a href="{{route('manutencao')}}"index.php/a-unirovuma/programa-de-mobilidade/bolsas-erasmus"
                                                                         class="bg-blue-600/30 backdrop-blur-md border border-blue-400 text-white px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold hover:bg-blue-600 transition-all text-sm md:text-base flex items-center gap-2">
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                             class="h-5 w-5" fill="none"
@@ -2638,7 +2635,7 @@
                                                                 <div class="flex flex-wrap gap-4 pt-4">
 
                                                                     <!-- Botão Ver Imagem / Cartaz -->
-                                                                    <a href="./manutencao.html"images/2026/aula%20inaugural%202026.jpg"
+                                                                    <a href="{{route('manutencao')}}"images/2026/aula%20inaugural%202026.jpg"
                                                                         target="_blank"
                                                                         class="bg-orange-500/20 backdrop-blur-md border border-orange-400 text-white px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold hover:bg-orange-500 transition-all text-sm md:text-base flex items-center gap-2">
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -2691,7 +2688,7 @@
                                                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
                                                         <!-- Card 1 -->
-                                                        <a href="./manutencao.html"images/Edital%20Novos%20Ingressos%202026.pdf"
+                                                        <a href="{{route('manutencao')}}"images/Edital%20Novos%20Ingressos%202026.pdf"
                                                             class="bg-white p-5 rounded-2xl shadow-xl flex flex-col items-center text-center border-b-4 border-blue-900 hover:-translate-y-1 transition-transform">
                                                             <div
                                                                 class="w-12 h-12 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mb-3">
@@ -2705,7 +2702,7 @@
                                                         </a>
 
                                                         <!-- Card 2 -->
-                                                        <a href="./manutencao.html"index.php/a-unirovuma/programa-de-mobilidade"
+                                                        <a href="{{route('manutencao')}}"index.php/a-unirovuma/programa-de-mobilidade"
                                                             class="bg-white p-5 rounded-2xl shadow-xl flex flex-col items-center text-center border-b-4 border-blue-900 hover:-translate-y-1 transition-transform">
                                                             <div
                                                                 class="w-12 h-12 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mb-3">
@@ -2732,7 +2729,7 @@
                                                         </a>
 
                                                         <!-- Card 4 -->
-                                                        <a href="./manutencao.html"#"
+                                                        <a href="{{route('manutencao')}}"#"
                                                             class="bg-white p-5 rounded-2xl shadow-xl flex flex-col items-center text-center border-b-4 border-cyan-500 hover:-translate-y-1 transition-transform">
                                                             <div
                                                                 class="w-12 h-12 bg-cyan-100 text-cyan-700 rounded-full flex items-center justify-center mb-3">
@@ -2850,7 +2847,7 @@
                                                                         <div class="ruxin-news-col-1">
                                                                             <div class="news-item">
 
-                                                                                <a href="./manutencao.html"index.php?view=article&amp;id=85:alusivo-ao-dia-internacional-da-matematica-o-instituto-superior-de-transportes-logistica-e-telecomunicacoes-atraves-do-nucleo-mequa-realizou-uma-palestra-sobre-os-desafios-na-aprendizagem-da-disciplina-2&amp;catid=10"
+                                                                                <a href="{{route('manutencao')}}"index.php?view=article&amp;id=85:alusivo-ao-dia-internacional-da-matematica-o-instituto-superior-de-transportes-logistica-e-telecomunicacoes-atraves-do-nucleo-mequa-realizou-uma-palestra-sobre-os-desafios-na-aprendizagem-da-disciplina-2&amp;catid=10"
                                                                                     class="title" itemprop="url">
                                                                                     <div class="news_hover_effect_off">
                                                                                         <img class="leading_news_image"
@@ -2863,13 +2860,13 @@
                                                                                 <div
                                                                                     class="lead_category_top lead_catid_10">
                                                                                     <a
-                                                                                        href="./manutencao.html"index.php?view=category&amp;id=10">
+                                                                                        href="{{route('manutencao')}}"index.php?view=category&amp;id=10">
                                                                                         NOTÍCIAS </a>
                                                                                 </div>
 
 
                                                                                 <a
-                                                                                    href="./manutencao.html"index.php?view=article&amp;id=85:alusivo-ao-dia-internacional-da-matematica-o-instituto-superior-de-transportes-logistica-e-telecomunicacoes-atraves-do-nucleo-mequa-realizou-uma-palestra-sobre-os-desafios-na-aprendizagem-da-disciplina-2&amp;catid=10">
+                                                                                    href="{{route('manutencao')}}"index.php?view=article&amp;id=85:alusivo-ao-dia-internacional-da-matematica-o-instituto-superior-de-transportes-logistica-e-telecomunicacoes-atraves-do-nucleo-mequa-realizou-uma-palestra-sobre-os-desafios-na-aprendizagem-da-disciplina-2&amp;catid=10">
                                                                                     <div class="link_on_image"></div>
                                                                                 </a>
 
@@ -2881,7 +2878,7 @@
                                                                                     <!-- Show Extra Field Before Title -->
 
                                                                                     <!-- Show Title -->
-                                                                                    <a href="./manutencao.html"index.php?view=article&amp;id=85:alusivo-ao-dia-internacional-da-matematica-o-instituto-superior-de-transportes-logistica-e-telecomunicacoes-atraves-do-nucleo-mequa-realizou-uma-palestra-sobre-os-desafios-na-aprendizagem-da-disciplina-2&amp;catid=10"
+                                                                                    <a href="{{route('manutencao')}}"index.php?view=article&amp;id=85:alusivo-ao-dia-internacional-da-matematica-o-instituto-superior-de-transportes-logistica-e-telecomunicacoes-atraves-do-nucleo-mequa-realizou-uma-palestra-sobre-os-desafios-na-aprendizagem-da-disciplina-2&amp;catid=10"
                                                                                         class="lead_title"
                                                                                         itemprop="url"
                                                                                         style="font-size: 18px; font-weight: 400;">Alusivo
@@ -2958,7 +2955,7 @@
                                                                             <div class="news-item">
 
                                                                                 <!-- Show image -->
-                                                                                <a href="./manutencao.html"index.php?view=article&amp;id=84:o-istlt-realizou-a-aula-inaugural-do-ano-academico-de-2025-sob-o-tema-governacao-paz-e-desenvolvimento-em-mocambique-desafios-e-possibilidades-para-o-ensino-superior&amp;catid=10"
+                                                                                <a href="{{route('manutencao')}}"index.php?view=article&amp;id=84:o-istlt-realizou-a-aula-inaugural-do-ano-academico-de-2025-sob-o-tema-governacao-paz-e-desenvolvimento-em-mocambique-desafios-e-possibilidades-para-o-ensino-superior&amp;catid=10"
                                                                                     class="title" itemprop="url">
                                                                                     <div class="news_hover_effect_off">
                                                                                         <img class="intro_news_image"
@@ -2972,7 +2969,7 @@
 
 
                                                                                 <a
-                                                                                    href="./manutencao.html"index.php?view=article&amp;id=84:o-istlt-realizou-a-aula-inaugural-do-ano-academico-de-2025-sob-o-tema-governacao-paz-e-desenvolvimento-em-mocambique-desafios-e-possibilidades-para-o-ensino-superior&amp;catid=10">
+                                                                                    href="{{route('manutencao')}}"index.php?view=article&amp;id=84:o-istlt-realizou-a-aula-inaugural-do-ano-academico-de-2025-sob-o-tema-governacao-paz-e-desenvolvimento-em-mocambique-desafios-e-possibilidades-para-o-ensino-superior&amp;catid=10">
                                                                                     <div class="link_on_image"></div>
                                                                                 </a>
 
@@ -2984,7 +2981,7 @@
                                                                                     <!-- Show Extra Field Before Title -->
 
                                                                                     <!-- Show Title -->
-                                                                                    <a href="./manutencao.html"index.php?view=article&amp;id=84:o-istlt-realizou-a-aula-inaugural-do-ano-academico-de-2025-sob-o-tema-governacao-paz-e-desenvolvimento-em-mocambique-desafios-e-possibilidades-para-o-ensino-superior&amp;catid=10"
+                                                                                    <a href="{{route('manutencao')}}"index.php?view=article&amp;id=84:o-istlt-realizou-a-aula-inaugural-do-ano-academico-de-2025-sob-o-tema-governacao-paz-e-desenvolvimento-em-mocambique-desafios-e-possibilidades-para-o-ensino-superior&amp;catid=10"
                                                                                         class="intro_title"
                                                                                         itemprop="url"
                                                                                         style="font-size: 18px; font-weight: 400;">O
@@ -3161,19 +3158,19 @@
                                                                 <div class="sp-simpleportfolio-filter">
                                                                     <ul>
                                                                         <li class="active" data-group="all"><a
-                                                                                href="./manutencao.html"#">Show
+                                                                                href="{{route('manutencao')}}"#">Show
                                                                                 All</a></li>
                                                                         <li data-group="eventos"><a
-                                                                                href="./manutencao.html"#">Eventos</a>
+                                                                                href="{{route('manutencao')}}"#">Eventos</a>
                                                                         </li>
                                                                         <li data-group="infraestruturas"><a
-                                                                                href="./manutencao.html"#">Infraestruturas</a>
+                                                                                href="{{route('manutencao')}}"#">Infraestruturas</a>
                                                                         </li>
                                                                         <li data-group="laboratorios"><a
-                                                                                href="./manutencao.html"#">Laboratórios</a>
+                                                                                href="{{route('manutencao')}}"#">Laboratórios</a>
                                                                         </li>
                                                                         <li data-group="pesquisa"><a
-                                                                                href="./manutencao.html"#">Pesquisa</a>
+                                                                                href="{{route('manutencao')}}"#">Pesquisa</a>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -3197,16 +3194,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/spsimpleportfolio/A%20UniRovuma%20curva-se%20a%20Isaura%20Nyusi%20e%20torna-se%20na%20terceira%20Honoris%20Causa%20por%20esta%20instituicao.png#joomlaImage://local-images/spsimpleportfolio/A%20UniRovuma%20curva-se%20a%20Isaura%20Nyusi%20e%20torna-se%20na%20terceira%20Honoris%20Causa%20por%20esta%20instituicao.png?width=1000&amp;height=632"
+                                                                                                href="{{route('manutencao')}}"images/spsimpleportfolio/A%20UniRovuma%20curva-se%20a%20Isaura%20Nyusi%20e%20torna-se%20na%20terceira%20Honoris%20Causa%20por%20esta%20instituicao.png#joomlaImage://local-images/spsimpleportfolio/A%20UniRovuma%20curva-se%20a%20Isaura%20Nyusi%20e%20torna-se%20na%20terceira%20Honoris%20Causa%20por%20esta%20instituicao.png?width=1000&amp;height=632"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/1-honoris-causa-a-isaura-nyusi?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/1-honoris-causa-a-isaura-nyusi?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/1-honoris-causa-a-isaura-nyusi?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/1-honoris-causa-a-isaura-nyusi?Itemid=0">
                                                                                                 Honoris Causa à Isaura
                                                                                                 Nyusi </a>
                                                                                         </h3>
@@ -3236,16 +3233,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/spsimpleportfolio/Laboratorio%20de%20Geologia-1.jpg#joomlaImage://local-images/spsimpleportfolio/Laboratorio%20de%20Geologia-1.jpg?width=1599&amp;height=1200"
+                                                                                                href="{{route('manutencao')}}"images/spsimpleportfolio/Laboratorio%20de%20Geologia-1.jpg#joomlaImage://local-images/spsimpleportfolio/Laboratorio%20de%20Geologia-1.jpg?width=1599&amp;height=1200"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/2-laboratorio-de-geologia?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/2-laboratorio-de-geologia?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/2-laboratorio-de-geologia?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/2-laboratorio-de-geologia?Itemid=0">
                                                                                                 Laboratório de Geologia
                                                                                             </a>
                                                                                         </h3>
@@ -3275,16 +3272,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/spsimpleportfolio/UNIMA-MALAWI-UNIROVUMA-3.jpg#joomlaImage://local-images/spsimpleportfolio/UNIMA-MALAWI-UNIROVUMA-3.jpg?width=960&amp;height=608"
+                                                                                                href="{{route('manutencao')}}"images/spsimpleportfolio/UNIMA-MALAWI-UNIROVUMA-3.jpg#joomlaImage://local-images/spsimpleportfolio/UNIMA-MALAWI-UNIROVUMA-3.jpg?width=960&amp;height=608"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/3-reitor-da-iunirovuma-visita-a-universidade-do-malawi?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/3-reitor-da-iunirovuma-visita-a-universidade-do-malawi?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/3-reitor-da-iunirovuma-visita-a-universidade-do-malawi?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/3-reitor-da-iunirovuma-visita-a-universidade-do-malawi?Itemid=0">
                                                                                                 Reitor da UniRovuma
                                                                                                 visita a Universidade do
                                                                                                 Malawi </a>
@@ -3315,16 +3312,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/spsimpleportfolio/Bloco%20Administrativo%20e%20Academico%20-%20Campus%20de%20Nangala%20-%20ISDRB%20-%20Lichinga.png#joomlaImage://local-images/spsimpleportfolio/Bloco%20Administrativo%20e%20Academico%20-%20Campus%20de%20Nangala%20-%20ISDRB%20-%20Lichinga.png?width=1521&amp;height=650"
+                                                                                                href="{{route('manutencao')}}"images/spsimpleportfolio/Bloco%20Administrativo%20e%20Academico%20-%20Campus%20de%20Nangala%20-%20ISDRB%20-%20Lichinga.png#joomlaImage://local-images/spsimpleportfolio/Bloco%20Administrativo%20e%20Academico%20-%20Campus%20de%20Nangala%20-%20ISDRB%20-%20Lichinga.png?width=1521&amp;height=650"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/4-bloco-academico-e-administrativo-no-campus-de-nangala?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/4-bloco-academico-e-administrativo-no-campus-de-nangala?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/4-bloco-academico-e-administrativo-no-campus-de-nangala?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/4-bloco-academico-e-administrativo-no-campus-de-nangala?Itemid=0">
                                                                                                 Bloco Académico e
                                                                                                 Administrativo no Campus
                                                                                                 de Nángala </a>
@@ -3355,16 +3352,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/spsimpleportfolio/Centro%20Cultural%20da%20UniRovuma.png#joomlaImage://local-images/spsimpleportfolio/Centro%20Cultural%20da%20UniRovuma.png?width=1525&amp;height=866"
+                                                                                                href="{{route('manutencao')}}"images/spsimpleportfolio/Centro%20Cultural%20da%20UniRovuma.png#joomlaImage://local-images/spsimpleportfolio/Centro%20Cultural%20da%20UniRovuma.png?width=1525&amp;height=866"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/5-centro-cultural-da-unirovuma?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/5-centro-cultural-da-unirovuma?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/5-centro-cultural-da-unirovuma?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/5-centro-cultural-da-unirovuma?Itemid=0">
                                                                                                 Centro Cultural da
                                                                                                 UniRovuma </a>
                                                                                         </h3>
@@ -3394,16 +3391,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/spsimpleportfolio/Cerimonia%20de%20Graduacao.jpg#joomlaImage://local-images/spsimpleportfolio/Cerimonia%20de%20Graduacao.jpg?width=2048&amp;height=1365"
+                                                                                                href="{{route('manutencao')}}"images/spsimpleportfolio/Cerimonia%20de%20Graduacao.jpg#joomlaImage://local-images/spsimpleportfolio/Cerimonia%20de%20Graduacao.jpg?width=2048&amp;height=1365"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/6-cerimonia-de-graduacao?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/6-cerimonia-de-graduacao?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/6-cerimonia-de-graduacao?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/6-cerimonia-de-graduacao?Itemid=0">
                                                                                                 Cerimónia de Graduação
                                                                                             </a>
                                                                                         </h3>
@@ -3433,16 +3430,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/spsimpleportfolio/UNIMA-MALAWI-UNIROVUMA-4.jpg#joomlaImage://local-images/spsimpleportfolio/UNIMA-MALAWI-UNIROVUMA-4.jpg?width=1600&amp;height=914"
+                                                                                                href="{{route('manutencao')}}"images/spsimpleportfolio/UNIMA-MALAWI-UNIROVUMA-4.jpg#joomlaImage://local-images/spsimpleportfolio/UNIMA-MALAWI-UNIROVUMA-4.jpg?width=1600&amp;height=914"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/7-visita-a-universidade-do-malawi?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/7-visita-a-universidade-do-malawi?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/7-visita-a-universidade-do-malawi?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/7-visita-a-universidade-do-malawi?Itemid=0">
                                                                                                 Visita a Universidade do
                                                                                                 Malawi </a>
                                                                                         </h3>
@@ -3472,16 +3469,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/spsimpleportfolio/Laboratorio%20de%20Geologia.jpg#joomlaImage://local-images/spsimpleportfolio/Laboratorio%20de%20Geologia.jpg?width=1599&amp;height=1200"
+                                                                                                href="{{route('manutencao')}}"images/spsimpleportfolio/Laboratorio%20de%20Geologia.jpg#joomlaImage://local-images/spsimpleportfolio/Laboratorio%20de%20Geologia.jpg?width=1599&amp;height=1200"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/8-laboratorio-de-geologia-napipine?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/8-laboratorio-de-geologia-napipine?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/8-laboratorio-de-geologia-napipine?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/8-laboratorio-de-geologia-napipine?Itemid=0">
                                                                                                 Laboratório de Geologia
                                                                                                 - Napipine </a>
                                                                                         </h3>
@@ -3511,16 +3508,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/pesquisa-isdrb-lichinga.jpg#joomlaImage://local-images/pesquisa-isdrb-lichinga.jpg?width=923&amp;height=2048"
+                                                                                                href="{{route('manutencao')}}"images/pesquisa-isdrb-lichinga.jpg#joomlaImage://local-images/pesquisa-isdrb-lichinga.jpg?width=923&amp;height=2048"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/9-demonstracao?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/9-demonstracao?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/9-demonstracao?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/9-demonstracao?Itemid=0">
                                                                                                 Demonstração </a>
                                                                                         </h3>
                                                                                         <div
@@ -3549,16 +3546,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/Tailandia.jpg#joomlaImage://local-images/Tailandia.jpg?width=1600&amp;height=1200"
+                                                                                                href="{{route('manutencao')}}"images/Tailandia.jpg#joomlaImage://local-images/Tailandia.jpg?width=1600&amp;height=1200"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/10-embaixador-da-tailandia-visita-universidade-rovuma?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/10-embaixador-da-tailandia-visita-universidade-rovuma?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/10-embaixador-da-tailandia-visita-universidade-rovuma?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/10-embaixador-da-tailandia-visita-universidade-rovuma?Itemid=0">
                                                                                                 Embaixador da Tailândia
                                                                                                 visita Universidade
                                                                                                 Rovuma </a>
@@ -3589,16 +3586,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/50-anos-da-independencia.jpg#joomlaImage://local-images/50-anos-da-independencia.jpg?width=1600&amp;height=1066"
+                                                                                                href="{{route('manutencao')}}"images/50-anos-da-independencia.jpg#joomlaImage://local-images/50-anos-da-independencia.jpg?width=1600&amp;height=1066"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/12-50-anos-de-independencia-em-debate-na-unirovuma?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/12-50-anos-de-independencia-em-debate-na-unirovuma?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/12-50-anos-de-independencia-em-debate-na-unirovuma?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/12-50-anos-de-independencia-em-debate-na-unirovuma?Itemid=0">
                                                                                                 50 anos de Independência
                                                                                                 em debate na UniRovuma
                                                                                             </a>
@@ -3629,16 +3626,16 @@
                                                                                         <div
                                                                                             class="sp-simpleportfolio-btns">
                                                                                             <a class="btn-zoom"
-                                                                                                href="./manutencao.html"images/unirovuma-campea.jpg#joomlaImage://local-images/unirovuma-campea.jpg?width=1080&amp;height=830"
+                                                                                                href="{{route('manutencao')}}"images/unirovuma-campea.jpg#joomlaImage://local-images/unirovuma-campea.jpg?width=1080&amp;height=830"
                                                                                                 data-featherlight="image">Zoom</a>
                                                                                             <a class="btn-view"
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/13-a-unirovuma-sagrou-se-campea-no-torneio-de-futsal?Itemid=0">View</a>
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/13-a-unirovuma-sagrou-se-campea-no-torneio-de-futsal?Itemid=0">View</a>
                                                                                         </div>
 
                                                                                         <h3
                                                                                             class="sp-simpleportfolio-title">
                                                                                             <a
-                                                                                                href="./manutencao.html"index.php/component/spsimpleportfolio/item/13-a-unirovuma-sagrou-se-campea-no-torneio-de-futsal?Itemid=0">
+                                                                                                href="{{route('manutencao')}}"index.php/component/spsimpleportfolio/item/13-a-unirovuma-sagrou-se-campea-no-torneio-de-futsal?Itemid=0">
                                                                                                 A UniRovuma sagrou-se
                                                                                                 campeã no torneio de
                                                                                                 futsal </a>
@@ -3805,7 +3802,7 @@
                                                                 Informativo</h4>
                                                             <p class="text-sm text-slate-400 mb-4 italic uppercase">
                                                                 Baixe a última edição do nosso boletim mensal.</p>
-                                                            <a href="./manutencao.html"media/attachments/2026/03/11/boletim-informativo-ed.-47---fev.-20261.pdf"
+                                                            <a href="{{route('manutencao')}}"media/attachments/2026/03/11/boletim-informativo-ed.-47---fev.-20261.pdf"
                                                                 class="inline-block bg-orange-600 px-6 py-2 rounded font-bold hover:bg-orange-700 transition italic shadow-sm shadow-sm shadow-sm shadow-sm uppercase italic tracking-tighter">Baixar
                                                                 PDF</a>
                                                         </div>
@@ -3893,10 +3890,10 @@
                                         <div class="sp-module-content">
                                             <ul class="menu">
                                                 <li class="item-117"><a
-                                                        href="./manutencao.html"#">Bem-vindos</a>
+                                                        href="{{route('manutencao')}}"#">Bem-vindos</a>
                                                 </li>
                                                 <li class="item-116"><a
-                                                        href="./manutencao.html"index.php/quem-somos">Quem
+                                                        href="{{route('manutencao')}}"index.php/quem-somos">Quem
                                                         nós somos</a></li>
                                             </ul>
                                         </div>
@@ -3915,7 +3912,7 @@
                                                         <div
                                                             class="speasyimagegallery-col-md-4 speasyimagegallery-col-sm-6 speasyimagegallery-col-xs-4">
                                                             <a class="speasyimagegallery-gallery-item"
-                                                                href="./manutencao.html"images/speasyimagegallery/albums/1/images/outorga-primeira-dama-unirovuma.jpg"
+                                                                href="{{route('manutencao')}}"images/speasyimagegallery/albums/1/images/outorga-primeira-dama-unirovuma.jpg"
                                                                 data-title="Outorga Primeira Dama Unirovuma"
                                                                 data-desc="">
                                                                 <div>
@@ -3933,7 +3930,7 @@
                                                         <div
                                                             class="speasyimagegallery-col-md-4 speasyimagegallery-col-sm-6 speasyimagegallery-col-xs-4">
                                                             <a class="speasyimagegallery-gallery-item"
-                                                                href="./manutencao.html"images/speasyimagegallery/albums/1/images/outorga-isaura-nyusi.png"
+                                                                href="{{route('manutencao')}}"images/speasyimagegallery/albums/1/images/outorga-isaura-nyusi.png"
                                                                 data-title="Outorga Isaura Nyusi" data-desc="">
                                                                 <div>
                                                                     <img src="./Universidade Rovuma - home_files/outorga-isaura-nyusi_thumb.png"
@@ -3950,7 +3947,7 @@
                                                         <div
                                                             class="speasyimagegallery-col-md-4 speasyimagegallery-col-sm-6 speasyimagegallery-col-xs-4">
                                                             <a class="speasyimagegallery-gallery-item"
-                                                                href="./manutencao.html"images/speasyimagegallery/albums/1/images/mctes-e-unirovuma.png"
+                                                                href="{{route('manutencao')}}"images/speasyimagegallery/albums/1/images/mctes-e-unirovuma.png"
                                                                 data-title="Mctes E Unirovuma" data-desc="">
                                                                 <div>
                                                                     <img src="./Universidade Rovuma - home_files/mctes-e-unirovuma_thumb.png"
@@ -3967,7 +3964,7 @@
                                                         <div
                                                             class="speasyimagegallery-col-md-4 speasyimagegallery-col-sm-6 speasyimagegallery-col-xs-4">
                                                             <a class="speasyimagegallery-gallery-item"
-                                                                href="./manutencao.html"images/speasyimagegallery/albums/1/images/alteracoes-climaticas-e-energias-renovaveis-atraem-instituicao-chinesa-a-mocambique.png"
+                                                                href="{{route('manutencao')}}"images/speasyimagegallery/albums/1/images/alteracoes-climaticas-e-energias-renovaveis-atraem-instituicao-chinesa-a-mocambique.png"
                                                                 data-title="Alteracoes Climaticas E Energias Renovaveis Atraem Instituicao Chinesa A Mocambique"
                                                                 data-desc="">
                                                                 <div>
@@ -3986,7 +3983,7 @@
                                                         <div
                                                             class="speasyimagegallery-col-md-4 speasyimagegallery-col-sm-6 speasyimagegallery-col-xs-4">
                                                             <a class="speasyimagegallery-gallery-item"
-                                                                href="./manutencao.html"images/speasyimagegallery/albums/1/images/a-unirovuma-regozija-se-com-o-apoio-da-unesco-na-elaboracao-do-plano-estrategico-2023-2032.png"
+                                                                href="{{route('manutencao')}}"images/speasyimagegallery/albums/1/images/a-unirovuma-regozija-se-com-o-apoio-da-unesco-na-elaboracao-do-plano-estrategico-2023-2032.png"
                                                                 data-title="A Unirovuma Regozija Se Com O Apoio Da Unesco Na Elaboracao Do Plano Estrategico 2023 2032"
                                                                 data-desc="">
                                                                 <div>
@@ -4006,7 +4003,7 @@
                                                         <div
                                                             class="speasyimagegallery-col-md-4 speasyimagegallery-col-sm-6 speasyimagegallery-col-xs-4">
                                                             <a class="speasyimagegallery-gallery-item"
-                                                                href="./manutencao.html"images/speasyimagegallery/albums/1/images/mr-e-vices-governadora-do-niassa.jpg"
+                                                                href="{{route('manutencao')}}"images/speasyimagegallery/albums/1/images/mr-e-vices-governadora-do-niassa.jpg"
                                                                 data-title="Mr E Vices Governadora Do Niassa"
                                                                 data-desc="">
                                                                 <div>
@@ -4060,11 +4057,11 @@
     <!-- otherwise (for old templates) attach the offcanvas module position -->
     <div class="offcanvas-menu">
         <div class="d-flex align-items-center p-3 pt-4">
-            <div class="logo"><a href="./manutencao.html">
+            <div class="logo"><a href="{{route('manutencao')}}">
                     <img class="logo-image "
                         src="{{asset('Universidade Rovuma - home_files/logotipo-unirovuma.fw.png')}}" height="80px"
                         alt="Logótipo UniRovuma">
-                </a></div> <a href="./manutencao.html"
+                </a></div> <a href="{{route('manutencao')}}"
                 class="close-offcanvas" aria-label="Close Off-canvas">
                 <div class="burger-icon">
                     <span></span>
@@ -4084,268 +4081,268 @@
                     <ul class="menu">
                         <li class="item-101 default current active ">
                             <span class=""><a
-                                    href="./manutencao.html"index.php">Início</a></span>
+                                    href="{{route('manutencao')}}"index.php">Início</a></span>
                         </li>
                         <li class="item-105 menu-deeper menu-parent"><a
-                                href="./manutencao.html"#">Institucional<span
+                                href="{{route('manutencao')}}"#">Institucional<span
                                     class="menu-toggler"></span></a>
                             <ul class="menu-child">
                                 <li class="item-481"><a
-                                        href="./manutencao.html"index.php/institucional/gabinetes-de-apoi-ao-reitor">Gabinetes
+                                        href="{{route('manutencao')}}"index.php/institucional/gabinetes-de-apoi-ao-reitor">Gabinetes
                                         de Apoio e Assessoria ao Reitor</a></li>
                             </ul>
                         </li>
                         <li class="item-121 menu-deeper menu-parent"><a
-                                href="./manutencao.html"#">A
+                                href="{{route('manutencao')}}"#">A
                                 UniRovuma<span class="menu-toggler"></span></a>
                             <ul class="menu-child">
                                 <li class="item-122 menu-deeper menu-parent"><a
-                                        href="./manutencao.html"#">Ensino<span
+                                        href="{{route('manutencao')}}"#">Ensino<span
                                             class="menu-toggler"></span></a>
                                     <ul class="menu-child">
                                         <li class="item-130"><a
-                                                href="./manutencao.html"#">Graduação</a>
+                                                href="{{route('manutencao')}}"#">Graduação</a>
                                         </li>
                                         <li class="item-131"><a
-                                                href="./manutencao.html"#">Pós-Graduação</a>
+                                                href="{{route('manutencao')}}"#">Pós-Graduação</a>
                                         </li>
                                         <li class="item-133"><a
-                                                href="./manutencao.html"index.php/mega/ensino/cursos"
+                                                href="{{route('manutencao')}}"index.php/mega/ensino/cursos"
                                                 target="_blank">Cursos</a></li>
                                         <li class="item-429"><a
-                                                href="./manutencao.html"#">Admissão
+                                                href="{{route('manutencao')}}"#">Admissão
                                                 aos cursos</a></li>
                                         <li class="item-430"><a
-                                                href="./manutencao.html"#">Especialização</a>
+                                                href="{{route('manutencao')}}"#">Especialização</a>
                                         </li>
                                         <li class="item-431"><a
-                                                href="./manutencao.html"index.php/mega/ensino/portal-do-estudante">Portal
+                                                href="{{route('manutencao')}}"index.php/mega/ensino/portal-do-estudante">Portal
                                                 do Estudante</a></li>
                                         <li class="item-432"><a
-                                                href="./manutencao.html"#">Bolsas
+                                                href="{{route('manutencao')}}"#">Bolsas
                                                 de Estudo</a></li>
                                         <li class="item-433"><a
-                                                href="./manutencao.html"#">Corpo
+                                                href="{{route('manutencao')}}"#">Corpo
                                                 Docente</a></li>
                                         <li class="item-434"><a
-                                                href="./manutencao.html"index.php/mega/ensino/futuros-estudantes">Futuros
+                                                href="{{route('manutencao')}}"index.php/mega/ensino/futuros-estudantes">Futuros
                                                 Estudantes</a></li>
                                         <li class="item-435"><a
-                                                href="./manutencao.html"index.php/mega/ensino/apoio-a-aprendizagem">Apoio
+                                                href="{{route('manutencao')}}"index.php/mega/ensino/apoio-a-aprendizagem">Apoio
                                                 à Aprendizagem</a></li>
                                         <li class="item-436"><a
-                                                href="./manutencao.html"#">UniRovuma
+                                                href="{{route('manutencao')}}"#">UniRovuma
                                                 em Números</a></li>
                                     </ul>
                                 </li>
                                 <li class="item-125 menu-deeper menu-parent"><a
-                                        href="./manutencao.html"#">FACULDADES<span
+                                        href="{{route('manutencao')}}"#">FACULDADES<span
                                             class="menu-toggler"></span></a>
                                     <ul class="menu-child">
                                         <li class="item-143"><a
-                                                href="./manutencao.html"#">Faculdade
+                                                href="{{route('manutencao')}}"#">Faculdade
                                                 de Ciências</a></li>
                                         <li class="item-144 menu-deeper menu-parent"><a
-                                                href="./manutencao.html"index.php/mega/layout-builder/mega-menu-generator">Faculdade
+                                                href="{{route('manutencao')}}"index.php/mega/layout-builder/mega-menu-generator">Faculdade
                                                 de Engenharia<span class="menu-toggler"></span></a>
                                             <ul class="menu-child">
                                                 <li class="item-485"><a
-                                                        href="./manutencao.html"index.php/mega/layout-builder/mega-menu-generator/projecto-de-solucoes-de-iluminacao">Projecto
+                                                        href="{{route('manutencao')}}"index.php/mega/layout-builder/mega-menu-generator/projecto-de-solucoes-de-iluminacao">Projecto
                                                         de soluções de iluminação </a></li>
                                             </ul>
                                         </li>
                                         <li class="item-145"><a
-                                                href="./manutencao.html"#">Faculdade
+                                                href="{{route('manutencao')}}"#">Faculdade
                                                 de Ciências Alimentares e Agrárias</a></li>
                                         <li class="item-437"><a
-                                                href="./manutencao.html"#">Faculdade
+                                                href="{{route('manutencao')}}"#">Faculdade
                                                 de Ciências Económicas e Empresarias</a></li>
                                         <li class="item-438"><a
-                                                href="./manutencao.html"#">Faculdade
+                                                href="{{route('manutencao')}}"#">Faculdade
                                                 de Direito</a></li>
                                         <li class="item-440"><a
-                                                href="./manutencao.html"index.php/mega/layout-builder/faculdade-de-letras">Faculdade
+                                                href="{{route('manutencao')}}"index.php/mega/layout-builder/faculdade-de-letras">Faculdade
                                                 de Letras</a></li>
                                         <li class="item-441"><a
-                                                href="./manutencao.html"index.php/mega/layout-builder/faculdade-de-ciencias-sociais-e-filosofia">Faculdade
+                                                href="{{route('manutencao')}}"index.php/mega/layout-builder/faculdade-de-ciencias-sociais-e-filosofia">Faculdade
                                                 de Ciências Sociais e Filosofia</a></li>
                                         <li class="item-442"><a
-                                                href="./manutencao.html"#">Faculdade
+                                                href="{{route('manutencao')}}"#">Faculdade
                                                 de Ciências de Desporto</a></li>
                                         <li class="item-439"><a
-                                                href="./manutencao.html"index.php/mega/layout-builder/faculdade-de-educacao-e-psicologia"
+                                                href="{{route('manutencao')}}"index.php/mega/layout-builder/faculdade-de-educacao-e-psicologia"
                                                 target="_blank">Faculdade de Educação e Psicologia</a></li>
                                     </ul>
                                 </li>
                                 <li class="item-124 menu-deeper menu-parent"><a
-                                        href="./manutencao.html"#">CENTROS
+                                        href="{{route('manutencao')}}"#">CENTROS
                                         DE ESTUDO<span class="menu-toggler"></span></a>
                                     <ul class="menu-child">
                                         <li class="item-463"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Formação Técnico Profissional</a></li>
                                         <li class="item-139"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Estudo em Governação, Conflitos e Direitos Humanos</a></li>
                                         <li class="item-140"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Estudo de Ciências Aplicadas, Inovação e Transferência de
                                                 Tecnologia</a></li>
                                         <li class="item-141"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Estudo em Políticas e Práticas Educativas</a></li>
                                         <li class="item-443"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Estudo em Psicologia Aplicada</a></li>
                                         <li class="item-444"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Estudo em Territórios, Ambiente e Recursos Naturais</a></li>
                                         <li class="item-445"><a
-                                                href="./manutencao.html"index.php/mega/easy-customization/centro-de-estudos-linguisticos-e-culturais">Centro
+                                                href="{{route('manutencao')}}"index.php/mega/easy-customization/centro-de-estudos-linguisticos-e-culturais">Centro
                                                 de Estudos Linguísticos e Culturais</a></li>
                                         <li class="item-446"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Prática e Treinamento Desportivo</a></li>
                                         <li class="item-447"><a
-                                                href="./manutencao.html"index.php/mega/easy-customization/centro-de-producao-e-processamento-de-alimentos">Centro
+                                                href="{{route('manutencao')}}"index.php/mega/easy-customization/centro-de-producao-e-processamento-de-alimentos">Centro
                                                 de Produção e Processamento de Alimentos</a></li>
                                         <li class="item-480"><a
-                                                href="./manutencao.html"index.php/mega/easy-customization/centro-de-producao">Centro
+                                                href="{{route('manutencao')}}"index.php/mega/easy-customization/centro-de-producao">Centro
                                                 De Produção E Processamento De Alimentos</a></li>
                                     </ul>
                                 </li>
                                 <li class="item-123 menu-deeper menu-parent"><a
-                                        href="./manutencao.html"#">DIRECÇÕES
+                                        href="{{route('manutencao')}}"#">DIRECÇÕES
                                         CENTRAIS<span class="menu-toggler"></span></a>
                                     <ul class="menu-child">
                                         <li class="item-135"><a
-                                                href="./manutencao.html"#">Direcção
+                                                href="{{route('manutencao')}}"#">Direcção
                                                 de Recursos Humanos</a></li>
                                         <li class="item-137"><a
-                                                href="./manutencao.html"#">Direcção
+                                                href="{{route('manutencao')}}"#">Direcção
                                                 de Finanças</a></li>
                                         <li class="item-136"><a
-                                                href="./manutencao.html"#">Direcção
+                                                href="{{route('manutencao')}}"#">Direcção
                                                 de Património</a></li>
                                         <li class="item-448"><a
-                                                href="./manutencao.html"#">Direcção
+                                                href="{{route('manutencao')}}"#">Direcção
                                                 de Tecnologias de Informação e Comunicação</a></li>
                                         <li class="item-449"><a
-                                                href="./manutencao.html"#">Direcção
+                                                href="{{route('manutencao')}}"#">Direcção
                                                 de Licitação</a></li>
                                         <li class="item-450"><a
-                                                href="./manutencao.html"#">Direcção
+                                                href="{{route('manutencao')}}"#">Direcção
                                                 do Registo Académico</a></li>
                                         <li class="item-451"><a
-                                                href="./manutencao.html"#">Direcção
+                                                href="{{route('manutencao')}}"#">Direcção
                                                 Pedagógica</a></li>
                                         <li class="item-452"><a
-                                                href="./manutencao.html"#">Direcção
+                                                href="{{route('manutencao')}}"#">Direcção
                                                 Científica</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li class="item-107 menu-deeper menu-parent"><a
-                                href="./manutencao.html"#">Institutos<span
+                                href="{{route('manutencao')}}"#">Institutos<span
                                     class="menu-toggler"></span></a>
                             <ul class="menu-child">
                                 <li class="item-406"><a
-                                        href="./manutencao.html"#">Instituto
+                                        href="{{route('manutencao')}}"#">Instituto
                                         Superior de Desenvolvimento Rural e Biociências</a></li>
                                 <li class="item-407"><a
-                                        href="./manutencao.html"#">Instituto
+                                        href="{{route('manutencao')}}"#">Instituto
                                         Superior de Recursos Naturais e Ambiente</a></li>
                                 <li class="item-408"><a
-                                        href="./manutencao.html"index.php/institutos/instituto-superior-de-transportes-logistica-e-telecomunicacoes">Instituto
+                                        href="{{route('manutencao')}}"index.php/institutos/instituto-superior-de-transportes-logistica-e-telecomunicacoes">Instituto
                                         Superior de Transportes, Logística e Telecomunicações</a></li>
                                 <li class="item-409"><a
-                                        href="./manutencao.html"index.php/institutos/instituto-superior-de-educacao-aberta-e-a-distancia">Instituto
+                                        href="{{route('manutencao')}}"index.php/institutos/instituto-superior-de-educacao-aberta-e-a-distancia">Instituto
                                         Superior de Educação Aberta e à Distância</a></li>
                             </ul>
                         </li>
                         <li class="item-108 menu-deeper menu-parent"><a
-                                href="./manutencao.html"#">Unidades
+                                href="{{route('manutencao')}}"#">Unidades
                                 Especiais<span class="menu-toggler"></span></a>
                             <ul class="menu-child">
                                 <li class="item-410"><a
-                                        href="./manutencao.html"index.php/unidades-especiais/editora-e-imprensa-universitaria">Editora
+                                        href="{{route('manutencao')}}"index.php/unidades-especiais/editora-e-imprensa-universitaria">Editora
                                         e Imprensa Universitária</a></li>
                                 <li class="item-411"><a
-                                        href="./manutencao.html"#">Serviços
+                                        href="{{route('manutencao')}}"#">Serviços
                                         de Documentação e Informação</a></li>
                                 <li class="item-412"><a
-                                        href="./manutencao.html"#">Serviço
+                                        href="{{route('manutencao')}}"#">Serviço
                                         de Acção Social</a></li>
                                 <li class="item-413"><a
-                                        href="./manutencao.html"#">Serviços
+                                        href="{{route('manutencao')}}"#">Serviços
                                         Especiais Integrados</a></li>
                                 <li class="item-414"><a
-                                        href="./manutencao.html"#">Centro
+                                        href="{{route('manutencao')}}"#">Centro
                                         Cultural da Universidade Rovuma</a></li>
                                 <li class="item-415"><a
-                                        href="./manutencao.html"#">Centro
+                                        href="{{route('manutencao')}}"#">Centro
                                         de Desenvolvimento de Infra-Estruturas Universitárias</a></li>
                                 <li class="item-416"><a
-                                        href="./manutencao.html"#">Centro
+                                        href="{{route('manutencao')}}"#">Centro
                                         de Desenvolvimento de Sistemas de Gestão Universitária</a></li>
                             </ul>
                         </li>
                         <li class="item-115 menu-deeper menu-parent"><a
-                                href="./manutencao.html"#">Pesquisa<span
+                                href="{{route('manutencao')}}"#">Pesquisa<span
                                     class="menu-toggler"></span></a>
                             <ul class="menu-child">
                                 <li class="item-394"><a
-                                        href="./manutencao.html"index.php/pesquisa/politica-de-pesquisa">Política
+                                        href="{{route('manutencao')}}"index.php/pesquisa/politica-de-pesquisa">Política
                                         de Pesquisa</a></li>
                                 <li class="item-395 menu-deeper menu-parent"><a
-                                        href="./manutencao.html"#">Centros
+                                        href="{{route('manutencao')}}"#">Centros
                                         de Pesquisa<span class="menu-toggler"></span></a>
                                     <ul class="menu-child">
                                         <li class="item-396"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Estudo em Governação, Conflitos e Direitos Humanos</a></li>
                                         <li class="item-397"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Estudo de Ciências Aplicadas, Inovação e Transferência de
                                                 Tecnologia</a></li>
                                         <li class="item-398"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Estudo em Políticas e Práticas Educativas</a></li>
                                         <li class="item-399"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Estudo em Psicologia Aplicada</a></li>
                                         <li class="item-400"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Estudo em Territórios, Ambiente e Recursos Naturais</a></li>
                                         <li class="item-401"><a
-                                                href="./manutencao.html"#">UniRovuma
+                                                href="{{route('manutencao')}}"#">UniRovuma
                                                 Business Center</a></li>
                                         <li class="item-402"><a
-                                                href="./manutencao.html"index.php/pesquisa/centros-de-pesquisa/centro-de-estudos-linguisticos-e-culturais">Centro
+                                                href="{{route('manutencao')}}"index.php/pesquisa/centros-de-pesquisa/centro-de-estudos-linguisticos-e-culturais">Centro
                                                 de Estudos Linguísticos e Culturais</a></li>
                                         <li class="item-403"><a
-                                                href="./manutencao.html"#">Centro
+                                                href="{{route('manutencao')}}"#">Centro
                                                 de Prática e Treinamento Desportivo</a></li>
                                         <li class="item-404"><a
-                                                href="./manutencao.html"index.php/pesquisa/centros-de-pesquisa/centro-de-producao-e-processamento-de-alimentos">Centro
+                                                href="{{route('manutencao')}}"index.php/pesquisa/centros-de-pesquisa/centro-de-producao-e-processamento-de-alimentos">Centro
                                                 de Produção e Processamento de Alimentos</a></li>
                                     </ul>
                                 </li>
                                 <li class="item-405"><a
-                                        href="./manutencao.html"#">Pesquisadores</a>
+                                        href="{{route('manutencao')}}">Pesquisadores</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="item-106 menu-deeper menu-parent"><a
-                                href="./manutencao.html"#">Serviços
+                                href="{{route('manutencao')}}">Serviços
                                 Online<span class="menu-toggler"></span></a>
                             <ul class="menu-child">
                                 <li class="item-453"><a
-                                        href="./manutencao.html"#">Provedor
+                                        href="{{route('manutencao')}}">Provedor
                                         do Estudante</a></li>
                                 <li class="item-454 menu-deeper menu-parent"><a
-                                        href="./manutencao.html"#">Repositório<span
+                                        href="{{route('manutencao')}}">Repositório<span
                                             class="menu-toggler"></span></a>
                                     <ul class="menu-child">
                                         <li class="item-455"><a
@@ -4353,17 +4350,17 @@
                                                 target="_blank" rel="noopener noreferrer">RECIMO – Publicações
                                                 Científicas</a></li>
                                         <li class="item-456"><a
-                                                href="./manutencao.html"#">Repositório
+                                                href="{{route('manutencao')}}">Repositório
                                                 Institucional</a></li>
                                         <li class="item-457"><a
-                                                href="./manutencao.html"index.php/a-unirovuma/repositorio/biblioteca-digital"
+                                                href="{{route('manutencao')}}"
                                                 target="_blank">Biblioteca Digital</a></li>
                                         <li class="item-458"><a
                                                 href="https://revistacientifica.unirovuma.ac.mz/"
                                                 target="_blank" rel="noopener noreferrer">Portal da Revista
                                                 Científica</a></li>
                                         <li class="item-462"><a
-                                                href="./manutencao.html"index.php/a-unirovuma/repositorio/exames-de-admissao"
+                                                href="{{route('manutencao')}}"
                                                 target="_blank">Exames de Admissão</a></li>
                                     </ul>
                                 </li>
@@ -4376,25 +4373,27 @@
                                         target="_blank" rel="noopener noreferrer">Sistema de Gestão de Inscrição de
                                         Mestrandos</a></li>
                                 <li class="item-460"><a
-                                        href="./manutencao.html"index.php/a-unirovuma/boletim-informativo"
+                                        href="{{route('manutencao')}}"
                                         target="_blank">Boletim Informativo</a></li>
                                 <li class="item-461"><a
-                                        href="./manutencao.html"index.php/a-unirovuma/acesso-restrito">Acesso
+                                        href="{{route('manutencao')}}">Acesso
                                         Restrito</a></li>
                                 <li class="item-465"><a
-                                        href="./manutencao.html"index.php/a-unirovuma/laboratorios-virtuais"
+                                        href="{{route('manutencao')}}"
                                         target="_blank">Laboratórios Virtuais</a></li>
                                 <li class="item-482 menu-deeper menu-parent"><a
-                                        href="./manutencao.html"index.php/a-unirovuma/programa-de-mobilidade">programa
+                                        href="{{route('manutencao')}}"
+                                        target="_blank">programa
                                         de mobilidade<span class="menu-toggler"></span></a>
                                     <ul class="menu-child">
                                         <li class="item-484"><a
-                                                href="./manutencao.html"index.php/a-unirovuma/programa-de-mobilidade/bolsas-erasmus">Bolsas
+                                                href="{{route('manutencao')}}">Bolsas
                                                 Erasmus</a></li>
                                     </ul>
                                 </li>
                                 <li class="item-483"><a
-                                        href="./manutencao.html"index.php/a-unirovuma/projecto-sportocon">Projecto
+                                        href="{{route('manutencao')}}"
+                                        target="_blank">Projecto
                                         sportocon</a></li>
                             </ul>
                         </li>
@@ -4415,7 +4414,7 @@
 
 
     <!-- Go to top -->
-    <a href="./manutencao.html"#" class="sp-scroll-up"
+    <a href="{{route('manutencao')}}" class="sp-scroll-up"
         aria-label="Scroll Up" style="display: inline;"><span class="fas fa-angle-up" aria-hidden="true"></span></a>
 
 
