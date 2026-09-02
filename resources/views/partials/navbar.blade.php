@@ -21,8 +21,12 @@
     <div class="container mx-auto px-4 py-3">
         <div class="flex justify-between items-center">
             <!-- Logo -->
-            <a href="/" class="flex-shrink-0">
+            <a href="/" class="flex items-center gap-2 text-blue-900 font-black ">
                 <img src="{{ asset('images/logotipo-unirovuma.png') }}" alt="UniRovuma" class="h-14 lg:h-16">
+                <div class="flex flex-col">
+                    <span>UNIVERSIDADE</span>
+                    <span class="flex items-center gap-2 text-orange-500">ROVUMA</span>
+                </div>
             </a>
 
             <!-- Desktop Menu -->
@@ -173,18 +177,144 @@
     </div>
 
     <!-- Mobile Menu Canvas -->
-    <div x-show="mobileMenu" x-cloak class="fixed inset-0 z-[200] bg-white overflow-y-auto p-6 lg:hidden">
-        <div class="flex justify-between items-center mb-8">
-            <img src="{{ asset('images/logotipo-unirovuma.png') }}" class="h-12">
-            <button @click="mobileMenu = false" class="text-blue-900"><i data-lucide="x" class="w-8 h-8"></i></button>
-        </div>
-        <nav class="flex flex-col gap-4 uppercase font-black text-blue-900 text-sm">
-            <a href="{{route('manutencao')}}" class="py-3 border-b">Início</a>
-            <a href="{{route('manutencao')}}" class="py-3 border-b">Institucional</a>
-            <a href="{{route('manutencao')}}" class="py-3 border-b">A UniRovuma</a>
-            <a href="{{route('manutencao')}}" class="py-3 border-b">Institutos</a>
-            <a href="{{route('manutencao')}}" class="py-3 border-b">Pesquisa</a>
-            <a href="{{route('manutencao')}}" class="py-3 text-orange-600">Serviços Online</a>
-        </nav>
+<!-- Mobile Menu Canvas -->
+<div x-show="mobileMenu" 
+     x-transition:enter="transition ease-out duration-300"
+     x-transition:enter-start="translate-x-full"
+     x-transition:enter-end="translate-x-0"
+     x-transition:leave="transition ease-in duration-200"
+     x-transition:leave-start="translate-x-0"
+     x-transition:leave-end="translate-x-full"
+     x-cloak 
+     class="fixed inset-0 z-[200] bg-white overflow-y-auto p-6 lg:hidden"
+     x-data="{ openSection: null }">
+
+    <!-- Header Mobile -->
+    <div class="flex justify-between items-center mb-8 border-b pb-4">
+        <img src="{{ asset('images/logotipo-unirovuma.png') }}" class="h-10">
+        <button @click="mobileMenu = false" class="text-blue-900 flex items-center gap-2 font-bold text-xs">
+            FECHAR <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
     </div>
+
+    <nav class="flex flex-col gap-2 uppercase font-black text-blue-900 text-xs tracking-wider">
+        
+        <!-- INÍCIO -->
+        <a href="/" class="py-4 border-b flex justify-between items-center">
+            Início <i data-lucide="home" class="w-4 h-4 text-slate-400"></i>
+        </a>
+
+        <!-- 1. INSTITUCIONAL -->
+        <div class="border-b">
+            <button @click="openSection = (openSection === 'inst' ? null : 'inst')" class="w-full py-4 flex justify-between items-center text-left">
+                Institucional <i data-lucide="chevron-down" class="w-4 h-4 transition-transform" :class="openSection === 'inst' ? 'rotate-180' : ''"></i>
+            </button>
+            <div x-show="openSection === 'inst'" class="pl-4 pb-4 space-y-3 normal-case font-medium text-slate-600 border-l-2 border-orange-500 ml-2">
+                <a href="{{route('manutencao')}}" class="block py-1 hover:text-orange-500">Reitor</a>
+                <a href="{{route('manutencao')}}" class="block py-1 hover:text-orange-500">Gabinetes de Apoio e Assessoria</a>
+                <a href="{{route('manutencao')}}" class="block py-1 hover:text-orange-500">Secretaria Geral</a>
+                <a href="{{route('manutencao')}}" class="block py-1 hover:text-orange-500 border-t pt-2 font-bold text-blue-900">Vice-Reitor Académico</a>
+                <a href="{{route('manutencao')}}" class="block py-1 hover:text-orange-500 font-bold text-blue-900">Vice-Reitor Administrativo</a>
+            </div>
+        </div>
+
+        <!-- 2. A UNIROVUMA (MEGA ACORDION) -->
+        <div class="border-b" x-data="{ subSection: null }">
+            <button @click="openSection = (openSection === 'uni' ? null : 'uni')" class="w-full py-4 flex justify-between items-center text-left text-orange-600">
+                A UniRovuma <i data-lucide="chevron-down" class="w-4 h-4 transition-transform" :class="openSection === 'uni' ? 'rotate-180' : ''"></i>
+            </button>
+            
+            <div x-show="openSection === 'uni'" class="pl-4 pb-4 space-y-4 font-bold text-[11px]">
+                
+                <!-- Ensino -->
+                <div>
+                    <button @click="subSection = (subSection === 'ensino' ? null : 'ensino')" class="flex items-center gap-2 py-2 text-blue-800 uppercase tracking-tighter">
+                        <i data-lucide="book-open" class="w-3.5 h-3.5"></i> Ensino 
+                    </button>
+                    <div x-show="subSection === 'ensino'" class="pl-6 space-y-2 normal-case font-medium text-slate-500 border-l">
+                        <a href="{{route('manutencao')}}" class="block">Graduação / Pós-Graduação</a>
+                        <a href="{{route('manutencao')}}" class="block">Cursos / Admissão</a>
+                        <a href="{{route('manutencao')}}" class="block">Bolsas de Estudo</a>
+                        <a href="{{route('manutencao')}}" class="block">Corpo Docente</a>
+                    </div>
+                </div>
+
+                <!-- Faculdades -->
+                <div>
+                    <button @click="subSection = (subSection === 'fac' ? null : 'fac')" class="flex items-center gap-2 py-2 text-blue-800 uppercase tracking-tighter">
+                        <i data-lucide="building-2" class="w-3.5 h-3.5"></i> Faculdades
+                    </button>
+                    <div x-show="subSection === 'fac'" class="pl-6 space-y-2 normal-case font-medium text-slate-500 border-l">
+                        <a href="{{route('manutencao')}}" class="block">F. de Engenharia</a>
+                        <a href="{{route('manutencao')}}" class="block">F. de Ciências</a>
+                        <a href="{{route('manutencao')}}" class="block">F. de Direito</a>
+                        <a href="{{route('manutencao')}}" class="block">F. de Letras / Sociais</a>
+                        <a href="{{route('manutencao')}}" class="block">F. de Educação e Psicologia</a>
+                    </div>
+                </div>
+
+                <!-- Direcções -->
+                <div>
+                    <button @click="subSection = (subSection === 'dir' ? null : 'dir')" class="flex items-center gap-2 py-2 text-blue-800 uppercase tracking-tighter">
+                        <i data-lucide="users" class="w-3.5 h-3.5"></i> Direcções Centrais
+                    </button>
+                    <div x-show="subSection === 'dir'" class="pl-6 space-y-2 normal-case font-medium text-slate-500 border-l text-[10px]">
+                        <a href="{{route('manutencao')}}" class="block">Recursos Humanos / Finanças</a>
+                        <a href="{{route('manutencao')}}" class="block">Património / TIC</a>
+                        <a href="{{route('manutencao')}}" class="block">Registo Académico / Pedagógica</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. INSTITUTOS -->
+        <div class="border-b">
+            <button @click="openSection = (openSection === 'insti' ? null : 'insti')" class="w-full py-4 flex justify-between items-center text-left">
+                Institutos <i data-lucide="chevron-down" class="w-4 h-4 transition-transform" :class="openSection === 'insti' ? 'rotate-180' : ''"></i>
+            </button>
+            <div x-show="openSection === 'insti'" class="pl-4 pb-4 space-y-3 normal-case font-medium text-slate-600 border-l ml-2">
+                <a href="{{route('manutencao')}}" class="block py-1 italic">ISDRB - Desenvolvimento Rural</a>
+                <a href="{{route('manutencao')}}" class="block py-1 italic">ISRNA - Recursos Naturais</a>
+                <a href="{{route('manutencao')}}" class="block py-1 italic">ISTLT - Transportes e Logística</a>
+                <a href="{{route('manutencao')}}" class="block py-1 font-bold text-orange-600">Educação Aberta e à Distância (EaD)</a>
+            </div>
+        </div>
+
+        <!-- 4. PESQUISA -->
+        <div class="border-b">
+            <button @click="openSection = (openSection === 'pesq' ? null : 'pesq')" class="w-full py-4 flex justify-between items-center text-left">
+                Pesquisa <i data-lucide="chevron-down" class="w-4 h-4 transition-transform" :class="openSection === 'pesq' ? 'rotate-180' : ''"></i>
+            </button>
+            <div x-show="openSection === 'pesq'" class="pl-4 pb-4 space-y-3 normal-case font-medium text-slate-600 border-l ml-2">
+                <a href="{{route('manutencao')}}" class="block">Política de Pesquisa</a>
+                <a href="{{route('manutencao')}}" class="block">Centros de Pesquisa</a>
+                <a href="{{route('manutencao')}}" class="block">Pesquisadores</a>
+            </div>
+        </div>
+
+        <!-- 5. SERVIÇOS ONLINE -->
+        <div class="mt-4">
+            <button @click="openSection = (openSection === 'serv' ? null : 'serv')" class="w-full py-4 px-4 bg-orange-500 text-white rounded-xl flex justify-between items-center shadow-lg">
+                Serviços Online <i data-lucide="globe" class="w-5 h-5 transition-transform" :class="openSection === 'serv' ? 'rotate-180' : ''"></i>
+            </button>
+            <div x-show="openSection === 'serv'" class="mt-2 p-4 bg-slate-50 rounded-xl space-y-3 normal-case font-bold text-slate-700 text-[11px]">
+                <a href="{{route('manutencao')}}" class="flex justify-between items-center">SIGEUR <i data-lucide="external-link" class="w-3 h-3"></i></a>
+                <a href="https://sigim.unirovuma.ac.mz/" class="flex justify-between items-center border-t pt-2">SIGIM (Mestrandos) <i data-lucide="external-link" class="w-3 h-3"></i></a>
+                <a href="{{route('manutencao')}}" class="flex justify-between items-center border-t pt-2 text-orange-600">REPOSITÓRIO INSTITUCIONAL</a>
+                <a href="{{route('manutencao')}}" class="flex justify-between items-center border-t pt-2 text-red-600 uppercase italic">Acesso Restrito</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Rodapé do Menu Mobile -->
+    <div class="mt-12 pt-8 border-t text-center space-y-4">
+        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Universidade Rovuma</p>
+        <div class="flex justify-center gap-6 text-blue-900">
+            <a href="{{route('manutencao')}}"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+            <a href="{{route('manutencao')}}"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+            <a href="{{route('manutencao')}}"><i data-lucide="mail" class="w-6 h-6"></i></a>
+        </div>
+    </div>
+</div>
 </header>
