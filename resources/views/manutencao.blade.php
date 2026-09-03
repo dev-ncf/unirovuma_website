@@ -1,139 +1,73 @@
-<!DOCTYPE html>
-<html lang="pt-PT">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manutenção - Universidade Rovuma</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        :root {
-            --cor-primaria: #003366; 
-            --cor-secundaria: #f4b400; 
-            --cor-texto: #333;
-            --cor-fundo: #f4f7f6;
-        }
+@extends('layouts.app')
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+@section('content')
+    <div class="min-h-[calc(100vh-80px)] bg-gray-100 flex items-center justify-center px-4 py-10">
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--cor-fundo);
-            color: var(--cor-texto);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
+        <main class="w-full max-w-xl text-center">
 
-        .container {
-            max-width: 600px;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            border-top: 8px solid var(--cor-primaria);
-        }
+            <div class="bg-white rounded-xl shadow-lg border-t-8 border-blue-900 p-6 sm:p-10">
 
-        .logo {
-            max-width: 180px;
-            margin-bottom: 20px;
-        }
+                {{-- Logo --}}
+                <div class="flex justify-center mb-6">
+                    <img src="{{ asset('images/logotipo-unirovuma.png') }}" alt="Universidade Rovuma"
+                        class="w-auto max-w-[180px] h-auto">
+                </div>
 
-        h1 {
-            color: var(--cor-primaria);
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
+                {{-- Estado --}}
+                <div class="mb-6">
+                    <span
+                        class="inline-block bg-yellow-400 text-black
+                               px-4 py-2 rounded-full
+                               text-xs sm:text-sm font-bold
+                               uppercase tracking-wide">
+                        Em manutenção
+                    </span>
+                </div>
 
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            color: #666;
-        }
+                {{-- Loader --}}
+                <div class="flex justify-center mb-6">
+                    <div class="w-10 h-10
+                               border-4 border-gray-200
+                               border-t-blue-900
+                               rounded-full animate-spin"
+                        role="status" aria-label="A carregar"></div>
+                </div>
 
-        .status-badge {
-            display: inline-block;
-            background: var(--cor-secundaria);
-            color: #000;
-            padding: 8px 15px;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-        }
+                {{-- Título --}}
+                <h1 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-4">
+                    Estamos a realizar uma manutenção
+                </h1>
 
-        .loader {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid var(--cor-primaria);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
-        }
+                {{-- Descrição --}}
+                <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
+                    O portal da Universidade Rovuma encontra-se temporariamente
+                    indisponível para manutenção e melhorias.
+                    Pedimos desculpas pelo inconveniente.
+                </p>
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+                <p class="text-gray-500 text-sm mb-6">
+                    Voltaremos a estar disponíveis brevemente.
+                </p>
 
-        .footer-info {
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-            font-size: 0.9rem;
-        }
+                {{-- Contactos --}}
+                <div class="border-t border-gray-200 pt-5 text-sm text-gray-500">
 
-        .contact-links {
-            margin-top: 15px;
-        }
+                    <p>
+                        Universidade Rovuma
+                    </p>
 
-        .contact-links a {
-            color: var(--cor-primaria);
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
+                  
+                </div>
 
-        .contact-links a:hover {
-            text-decoration: underline;
-        }
+            </div>
 
-        /* Estilo para imagem de fallback caso não haja logo */
-        .logo-placeholder {
-            font-weight: 700;
-            font-size: 1.5rem;
-            color: var(--cor-primaria);
-            margin-bottom: 20px;
-            display: block;
-        }
-    </style>
-</head>
-<body>
+            {{-- Copyright --}}
+            <p class="mt-5 text-xs text-gray-400">
+                &copy; {{ date('Y') }} Universidade Rovuma.
+                Todos os direitos reservados.
+            </p>
 
-    <div class="container">
-       
-        <img src="./Universidade Rovuma - home_files/logotipo-unirovuma.fw.png" alt="Logo UniRovuma" class="logo" onerror="this.style.display='none'; document.getElementById('placeholder').style.display='block';">
-        <div id="placeholder" class="logo-placeholder" style="display:none;">UNIVERSIDADE ROVUMA</div>
+        </main>
 
-        <div class="loader"></div>
-        
-        <div class="status-badge">Sistema em Atualização</div>
-        
-        <h1>Estamos a trabalhar para melhorar!</h1>
-        
-        <p>Prezado utilizador, o portal da <strong>Universidade Rovuma</strong> encontra-se temporariamente indisponível para manutenção programada. Voltaremos a estar online em breve.</p>
-
-        
     </div>
-
-</body>
-</html>
+@endsection
