@@ -294,7 +294,8 @@
 
         <!-- Header Mobile -->
         <div class="flex justify-between items-center mb-8 border-b pb-4">
-            <img src="{{ asset('images/logotipo-unirovuma.png') }}" class="h-10"> <span class="text-blue-900 font-black text-lg">UNIROVUMA</span>
+            <img src="{{ asset('images/logotipo-unirovuma.png') }}" class="h-10"> <span
+                class="text-blue-900 font-black text-lg">UNIROVUMA</span>
             <button @click="mobileMenu = false" class="text-blue-900 flex items-center gap-2 font-bold text-xs">
                 <i data-lucide="x" class="w-6 h-6"></i>
             </button>
@@ -441,11 +442,40 @@
                 </button>
                 <div x-show="openSection === 'insti'"
                     class="pl-4 pb-4 space-y-3 normal-case font-medium text-slate-600 border-l ml-2">
-                    <a href="{{ route('manutencao') }}" class="block py-1 italic">ISDRB - I.S.  Desenvolvimento rural e Biociências (Niassa)</a>
-                    <a href="{{ route('manutencao') }}" class="block py-1 italic">ISRNA - I.S. de Recursos Naturais e Ambiente (Montepuez)</a>
-                    <a href="{{ route('manutencao') }}" class="block py-1 italic">ISTLT - I.S. de Transporte Logística e Telecomunicações (Nacala)</a>
-                    <a href="{{ route('manutencao') }}" class="block py-1 font-bold text-orange-600">I.S.Educação Aberta
+                    <a href="{{ route('manutencao') }}" class="block py-1 italic">ISDRB - I.S. Desenvolvimento rural
+                        e Biociências (Niassa)</a>
+                    <a href="{{ route('manutencao') }}" class="block py-1 italic">ISRNA - I.S. de Recursos Naturais e
+                        Ambiente (Montepuez)</a>
+                    <a href="{{ route('manutencao') }}" class="block py-1 italic">ISTLT - I.S. de Transporte
+                        Logística e Telecomunicações (Nacala)</a>
+                    <a href="{{ route('manutencao') }}" class="block py-1 font-bold text-orange-600">I.S.Educação
+                        Aberta
                         e à Distância (EaD)</a>
+                </div>
+            </div>
+            <!-- 3. Unidades  -->
+            <div class="border-b">
+                <button @click="openSection = (openSection === 'unid' ? null : 'unid')"
+                    class="w-full py-4 flex justify-between items-center text-left">
+                    Unidades Especiais <i data-lucide="chevron-down" class="w-4 h-4 transition-transform"
+                        :class="openSection === 'unid' ? 'rotate-180' : ''"></i>
+                </button>
+                <div x-show="openSection === 'unid'"
+                    class="pl-4 pb-4 space-y-3 normal-case font-medium text-slate-600 border-l ml-2">
+                    <a href="{{ route('manutencao') }}" class="block py-1 italic">Editora e
+                        Imprensa Universitária</a>
+                    <a href="{{ route('manutencao') }}" class="block py-1 italic">Serviços de
+                        Documentação e Informação</a>
+                    <a href="{{ route('manutencao') }}" class="block py-1 italic">Serviços de
+                        Acção Social</a>
+                    <a href="{{ route('manutencao') }}" class="block py-1 italic">Serviços
+                        Especiais Integrados</a>
+                    <a href="{{ route('manutencao') }}" class="block py-1 italic">Centro Cultural
+                        da Universidade Rovuma</a>
+                    <a href="{{ route('manutencao') }}" class="block py-1 italic">Centro de
+                        Desenvolvimento de Infra-Estrutura Universitária</a>
+                    <a href="{{ route('manutencao') }}" class="block py-1 italic">Centro de
+                        Desenvolvimento de Sistemas de Gestão Universitária</a>
                 </div>
             </div>
 
