@@ -4,18 +4,18 @@
             
             <!-- Coluna 1: Sobre -->
             <div>
-                <img src="{{ asset('images/logotipo-unirovuma.png') }}" alt="Logo" class="h-16 mb-6 brightness-0 invert">
+                <img src="{{ asset('images/logotipo-unirovuma.png') }}" alt="Logo" class="h-16 mb-6 ">
                 <p class="text-slate-400 text-sm leading-relaxed mb-6">
                     A Universidade Rovuma é uma instituição pública focada na excelência acadêmica e no desenvolvimento sustentável da região Norte de Moçambique.
                 </p>
                 <div class="flex gap-4">
-                    <a href="{{route('manutencao')}}" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-orange-500 transition">
+                    <a href="{{route('manutencao')}}" class="w-10 h-10 rounded-full">
                         <i data-lucide="facebook" class="w-5 h-5"></i>
                     </a>
-                    <a href="{{route('manutencao')}}" class="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center hover:bg-orange-500 transition">
+                    <a href="{{route('manutencao')}}" class="w-10 h-10 rounded-full">
                         <i data-lucide="youtube" class="w-5 h-5"></i>
                     </a>
-                    <a href="{{route('manutencao')}}" class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center hover:bg-orange-500 transition">
+                    <a href="{{route('manutencao')}}" class="w-10 h-10 rounded-full">
                         <i data-lucide="instagram" class="w-5 h-5"></i>
                     </a>
                 </div>
