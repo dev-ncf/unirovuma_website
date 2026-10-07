@@ -144,12 +144,12 @@
                 <span class="text-[10px] text-slate-500 mt-1">Mobilidade Funcionários</span>
             </a>
 
-            <a href="{{route('manutencao')}}"
+            <a href="{{route('candidatura.index')}}"
                 class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center text-center border-b-4 border-cyan-500 hover:-translate-y-2 transition duration-300">
                 <div class="w-12 h-12 bg-cyan-50 text-cyan-700 rounded-full flex items-center justify-center mb-3"><i
                         data-lucide="monitor"></i></div>
                 <span class="text-xs font-black uppercase text-cyan-800 tracking-tight">Educação EaD</span>
-                <span class="text-[10px] text-slate-500 mt-1 uppercase">Resultados Admissão</span>
+                <span class="text-[10px] text-slate-500 mt-1 uppercase">Admissão</span>
             </a>
 
             <a href="{{route('manutencao')}}"
