@@ -220,7 +220,7 @@ new #[Layout('components.layouts.app')] class extends Component {
                                             {{ !empty($projeto->anexos) ? count($projeto->anexos) . ' anexo(s)' : 'Sem anexos' }}
                                         </span>
 
-                                        <a href="{{ route('projeto.detalhe', $projeto->id) }}"
+                                        <a href="{{ route('projeto.detalhe', [$unidade->slug, $projeto->id]) }}"
                                             class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-900 hover:text-orange-600 transition bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm">
                                             <i data-lucide="eye" class="w-3.5 h-3.5 text-orange-500"></i>
                                             Mais Detalhes

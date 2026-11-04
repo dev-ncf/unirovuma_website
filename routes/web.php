@@ -13,7 +13,7 @@ Route::get('/manutencao', function () {
     return view('manutencao');
 })->name('manutencao');
 
-Route::livewire('/unidade/projectos/{id}', 'pages::projeto-detalhe')->name('projeto.detalhe');
+Route::livewire('/unidade/{slug}/projectos/{id}', 'pages::projeto-detalhe')->name('projeto.detalhe');
 Route::livewire('/unidade/{slug}', 'pages::unidade-detalhe')->name('unidade.detalhe');
 Route::livewire('/noticia/{id}', 'pages::noticia-detalhe')->name('noticia.detalhe');
 Route::livewire('/direcao/{slug}', 'pages::direcao-detalhe')->name('direcao.detalhe');
