@@ -21,7 +21,8 @@
                             <span class="text-orange-400 not-italic">Exames de Admissão 2027</span>
                         </h2>
                         <p class="text-sm md:text-xl opacity-90 max-w-2xl font-light leading-relaxed">
-                            Consulte as vagas, os cursos disponíveis, os requisitos e os procedimentos para a candidatura ao ensino superior.
+                            Consulte as vagas, os cursos disponíveis, os requisitos e os procedimentos para a candidatura ao
+                            ensino superior.
                             <strong class="block mt-2 text-white"><i data-lucide="calendar"
                                     class="inline w-5 h-5 mr-1 text-orange-400"></i> Inscrições abertas</strong>
                         </p>
@@ -49,22 +50,24 @@
                             <span class="text-orange-400 not-italic">à Distância - EaD 2027</span>
                         </h2>
                         <p class="text-sm md:text-xl opacity-90 max-w-2xl font-light leading-relaxed">
-                            Flexibilidade para estudar onde e quando quiser. Conheça a nossa oferta formativa em regime à Distância.
+                            Flexibilidade para estudar onde e quando quiser. Conheça a nossa oferta formativa em regime à
+                            Distância.
                             <strong class="block mt-2 text-white"><i data-lucide="book-open"
-                                    class="inline w-5 h-5 mr-1 text-orange-400"></i> Matrículas e Candidaturas Abertas</strong>
+                                    class="inline w-5 h-5 mr-1 text-orange-400"></i> Matrículas e Candidaturas
+                                Abertas</strong>
                         </p>
                         <div class="flex flex-wrap gap-4 pt-2">
-                            <a href="{{route('candidatura.index')}}" target="_blank"
+                            <a href="{{ route('candidatura.index') }}" target="_blank"
                                 class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-black uppercase text-sm transition-all shadow-2xl flex items-center gap-2">
                                 Conhecer os Cursos EaD <i data-lucide="external-link" class="w-4 h-4"></i>
                             </a>
                         </div>
-                            <div class="flex flex-wrap gap-4 pt-2">
-                                <a href="https://candidaturas.up.ac.mz/" target="_blank"
-                                    class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-black uppercase text-sm transition-all shadow-2xl flex items-center gap-2">
-                                    Inscreva-se já <i data-lucide="external-link" class="w-4 h-4"></i>
-                                </a>
-                            </div>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="https://candidaturas.up.ac.mz/" target="_blank"
+                                class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-black uppercase text-sm transition-all shadow-2xl flex items-center gap-2">
+                                Inscreva-se já <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -118,7 +121,7 @@
                                 Até 05 de Maio de 2026.</span>
                         </p>
                         <div class="flex flex-wrap gap-4">
-                            <a href="{{route('manutencao')}}"
+                            <a href="{{ route('manutencao') }}"
                                 class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-xl flex items-center gap-2">
                                 <i data-lucide="file-text" class="w-4 h-4"></i> Ver Edital
                             </a>
@@ -144,9 +147,10 @@
                             <span class="text-orange-400">UniRovuma 2026</span>
                         </h2>
                         <p class="text-sm md:text-lg opacity-90 max-w-2xl font-light italic">
-                            A Universidade Rovuma (UniRovuma) acaba de assinar um Memorando de Entendimento (MdE) com a Tanzânia Institute for...
+                            A Universidade Rovuma (UniRovuma) acaba de assinar um Memorando de Entendimento (MdE) com a
+                            Tanzânia Institute for...
                         </p>
-                        <a href="{{route('manutencao')}}"
+                        <a href="{{ route('manutencao') }}"
                             class="bg-orange-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-orange-600 transition flex items-center gap-2 shadow-lg">
                             <i data-lucide="image" class="w-5 h-5"></i>Mais detalhes
                         </a>
@@ -166,7 +170,7 @@
                         <p class="text-sm md:text-lg opacity-90 max-w-2xl font-light italic">
                             Participe!
                         </p>
-                        <a href="{{route('manutencao')}}"
+                        <a href="{{ route('manutencao') }}"
                             class="bg-orange-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-orange-600 transition flex items-center gap-2 shadow-lg">
                             <i data-lucide="image" class="w-5 h-5"></i> Visualizar Cartaz
                         </a>
@@ -190,7 +194,7 @@
     <section class="relative z-30 container mx-auto px-6 -mt-10 md:-mt-16">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
-            <a href="{{route('manutencao')}}"
+            <a href="{{ route('manutencao') }}"
                 class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center text-center border-b-4 border-blue-900 hover:-translate-y-2 transition duration-300">
                 <div class="w-12 h-12 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-3"><i
                         data-lucide="graduation-cap"></i></div>
@@ -198,7 +202,7 @@
                 <span class="text-[10px] text-slate-500 mt-1 uppercase tracking-tighter">Edital 2027</span>
             </a>
 
-            <a href="{{route('manutencao')}}"
+            <a href="{{ route('manutencao') }}"
                 class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center text-center border-b-4 border-blue-900 hover:-translate-y-2 transition duration-300">
                 <div class="w-12 h-12 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-3"><i
                         data-lucide="contact-2"></i></div>
@@ -206,7 +210,7 @@
                 <span class="text-[10px] text-slate-500 mt-1">Mobilidade Funcionários</span>
             </a>
 
-            <a href="{{route('candidatura.index')}}"
+            <a href="{{ route('candidatura.index') }}"
                 class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center text-center border-b-4 border-cyan-500 hover:-translate-y-2 transition duration-300">
                 <div class="w-12 h-12 bg-cyan-50 text-cyan-700 rounded-full flex items-center justify-center mb-3"><i
                         data-lucide="monitor"></i></div>
@@ -214,7 +218,7 @@
                 <span class="text-[10px] text-slate-500 mt-1 uppercase">Admissão</span>
             </a>
 
-            <a href="{{route('manutencao')}}"
+            <a href="{{ route('manutencao') }}"
                 class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center text-center border-b-4 border-cyan-500 hover:-translate-y-2 transition duration-300">
                 <div class="w-12 h-12 bg-cyan-50 text-cyan-700 rounded-full flex items-center justify-center mb-3"><i
                         data-lucide="clipboard-list"></i></div>
@@ -312,17 +316,46 @@
         <!-- Reitoria (Gabinete) -->
         <div class="space-y-10">
             <h2 class="text-2xl font-black text-blue-900 mb-10 uppercase italic text-center">Gabinete da Reitoria</h2>
-            @foreach ($direcao as $item)
-           
-            <div class="flex flex-col items-center text-center">
-                <div class="w-40 h-40 rounded-full border-4 {{$item->cargo == 'Reitor' ? 'border-blue-900' : 'border-yellow-900'}} overflow-hidden mb-4 shadow-xl">
-                    <img src="{{ asset('storage/' . $item->foto) }}" class="w-full h-full object-cover">
+
+            @php
+                // Separa o Reitor dos demais membros (Vices)
+                $reitor = $direcao->first(
+                    fn($item) => str_contains(strtolower($item->cargo), 'reitor') &&
+                        !str_contains(strtolower($item->cargo), 'vice'),
+                );
+                $vices = $direcao->reject(fn($item) => $reitor && $item->id === $reitor->id);
+            @endphp
+
+            <!-- 1. Reitor (Centralizado no Topo) -->
+            @if ($reitor)
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-44 h-44 rounded-full border-4 border-blue-900 overflow-hidden mb-4 shadow-xl">
+                        <img src="{{ asset('storage/' . $reitor->foto) }}" alt="{{ $reitor->nome_completo }}"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-sm font-black uppercase text-blue-900 leading-tight">{{ $reitor->nome_completo }}</h4>
+                    <span
+                        class="text-[11px] font-bold text-orange-600 uppercase tracking-widest mt-1">{{ $reitor->cargo }}</span>
                 </div>
-                <h4 class="text-xs font-black uppercase text-blue-900 leading-tight">{{$item->nome_completo}}</h4>
-                <span class="text-[10px] font-bold text-orange-600 uppercase tracking-widest mt-1">{{$item->cargo}}</span>
-            </div>
-            
-            @endforeach
+            @endif
+
+            <!-- 2. Vice-Reitores (Lado a Lado) -->
+            @if ($vices->isNotEmpty())
+                <div class="flex flex-wrap justify-center items-start gap-8 md:gap-16 pt-2">
+                    @foreach ($vices as $item)
+                        <div class="flex flex-col items-center text-center max-w-[200px]">
+                            <div class="w-36 h-36 rounded-full border-4 border-yellow-900 overflow-hidden mb-4 shadow-xl">
+                                <img src="{{ asset('storage/' . $item->foto) }}" alt="{{ $item->nome_completo }}"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <h4 class="text-xs font-black uppercase text-blue-900 leading-tight">
+                                {{ $item->nome_completo }}</h4>
+                            <span
+                                class="text-[10px] font-bold text-orange-600 uppercase tracking-widest mt-1">{{ $item->cargo }}</span>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
         </div>
     </section>
     <!-- SEÇÃO DE NOTÍCIAS E EVENTOS -->
@@ -332,7 +365,7 @@
         <div class="lg:col-span-2">
             <div class="flex items-center justify-between mb-10 border-l-4 border-orange-500 pl-4">
                 <h2 class="text-2xl font-black text-blue-900 uppercase italic tracking-tight">Notícias Dinâmicas</h2>
-                <a href="{{route('manutencao')}}"
+                <a href="{{ route('manutencao') }}"
                     class="text-xs font-bold text-orange-600 hover:text-blue-900 transition flex items-center gap-1 uppercase">Ver
                     Todas <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
             </div>
