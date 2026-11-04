@@ -40,16 +40,20 @@
             animation: marquee 30s linear infinite;
         }
     </style>
+     @livewireStyles
 </head>
 <body class="bg-[#fcfdfe] font-sans antialiased">
 
-    @include('partials.navbar')
+    <livewire:navbar-menu />
 
     <main>
         @yield('content')
     </main>
 
+    {{-- {{ $slot }} --}}
     @include('partials.footer')
+
+    @livewireScripts
 
     <!-- Swiper.js JS (OBRIGATÓRIO PARA O CAROUSEL) -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -5,6 +5,68 @@
     <section class="relative group">
         <div class="swiper mySwiper h-[550px] md:h-[700px] w-full">
             <div class="swiper-wrapper text-white">
+                <!-- SLIDE (PRIORIDADE): EXAME DE ADMISSÃO 2027 -->
+                <div class="swiper-slide bg-slate-900 relative overflow-hidden">
+                    <img src="{{ asset('images/exames-admissao-2027.jpg') }}" alt="Exames de Admissão UniRovuma 2027"
+                        class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-[10s] scale-110 group-hover:scale-100">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#00225a] via-[#00225a]/60 to-transparent"></div>
+                    <div
+                        class="relative z-10 h-full container mx-auto px-6 flex flex-col justify-center items-start space-y-6">
+                        <span
+                            class="bg-orange-600 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-[0.2em] shadow-lg flex items-center gap-2">
+                            <i data-lucide="file-text" class="w-4 h-4"></i> Ingresso 2027
+                        </span>
+                        <h2 class="text-4xl md:text-7xl font-black leading-none max-w-4xl uppercase italic">
+                            Edital <br>
+                            <span class="text-orange-400 not-italic">Exames de Admissão 2027</span>
+                        </h2>
+                        <p class="text-sm md:text-xl opacity-90 max-w-2xl font-light leading-relaxed">
+                            Consulte as vagas, os cursos disponíveis, os requisitos e os procedimentos para a candidatura ao ensino superior.
+                            <strong class="block mt-2 text-white"><i data-lucide="calendar"
+                                    class="inline w-5 h-5 mr-1 text-orange-400"></i> Inscrições abertas</strong>
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="#" target="_blank"
+                                class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-black uppercase text-sm transition-all shadow-2xl flex items-center gap-2">
+                                Ver Edital e Informações <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDE: ENSINO A DISTÂNCIA - UNIROVUMA -->
+                <div class="swiper-slide bg-slate-900 relative overflow-hidden">
+                    <img src="{{ asset('images/ensino-a-distancia.jpg') }}" alt="Ensino a Distância UniRovuma"
+                        class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-[10s] scale-110 group-hover:scale-100">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#00225a] via-[#00225a]/60 to-transparent"></div>
+                    <div
+                        class="relative z-10 h-full container mx-auto px-6 flex flex-col justify-center items-start space-y-6">
+                        <span
+                            class="bg-orange-600 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-[0.2em] shadow-lg flex items-center gap-2">
+                            <i data-lucide="monitor-play" class="w-4 h-4"></i> Ensino a Distância (EaD)
+                        </span>
+                        <h2 class="text-4xl md:text-7xl font-black leading-none max-w-4xl uppercase italic">
+                            Cursos em regime <br>
+                            <span class="text-orange-400 not-italic">à Distância - EaD 2027</span>
+                        </h2>
+                        <p class="text-sm md:text-xl opacity-90 max-w-2xl font-light leading-relaxed">
+                            Flexibilidade para estudar onde e quando quiser. Conheça a nossa oferta formativa em regime à Distância.
+                            <strong class="block mt-2 text-white"><i data-lucide="book-open"
+                                    class="inline w-5 h-5 mr-1 text-orange-400"></i> Matrículas e Candidaturas Abertas</strong>
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="{{route('candidatura.index')}}" target="_blank"
+                                class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-black uppercase text-sm transition-all shadow-2xl flex items-center gap-2">
+                                Conhecer os Cursos EaD <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                            <div class="flex flex-wrap gap-4 pt-2">
+                                <a href="https://candidaturas.up.ac.mz/" target="_blank"
+                                    class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-black uppercase text-sm transition-all shadow-2xl flex items-center gap-2">
+                                    Inscreva-se já <i data-lucide="external-link" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                    </div>
+                </div>
 
                 <!-- SLIDE 1 (PRIORIDADE): CICTED 2026 -->
                 <div class="swiper-slide bg-slate-900 relative overflow-hidden">
