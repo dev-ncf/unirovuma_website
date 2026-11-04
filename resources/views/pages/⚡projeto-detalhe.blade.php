@@ -81,7 +81,7 @@ new #[Layout('components.layouts.app')] class extends Component {
         <!-- Voltar / Breadcrumbs -->
         <div class="mb-6 flex items-center justify-between">
             @if ($unidade)
-                <a href="{{ url('/unidades/' . $unidade->slug) }}"
+                <a href="{{ url('/unidade/' . $unidade->slug) }}"
                     class="text-xs font-bold text-blue-900 hover:text-yellow-500 transition flex items-center gap-1.5">
                     <i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar para {{ $unidade->nome }}
                 </a>
