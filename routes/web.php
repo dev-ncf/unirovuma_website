@@ -5,9 +5,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CandidaturaController;
 use App\Http\Middleware\AdminAuth;
 use App\Models\UnidadeAcademica;
+use App\Models\Direcao;
 
 Route::get('/', function () {
-    return view('welcome');
+
+$direcao = Direcao::all();
+    return view('welcome',compact('direcao'));
 })->name('home');
 Route::get('/manutencao', function () {
     return view('manutencao');
