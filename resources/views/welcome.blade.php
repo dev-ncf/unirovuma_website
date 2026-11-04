@@ -313,34 +313,15 @@
         <div class="space-y-10">
             <h2 class="text-2xl font-black text-blue-900 mb-10 uppercase italic text-center">Gabinete da Reitoria</h2>
             @foreach ($direcao as $item)
-                
-            @if($item->cargo == 'Reitor')
+           
             <div class="flex flex-col items-center text-center">
-                <div class="w-40 h-40 rounded-full border-4 border-blue-900 overflow-hidden mb-4 shadow-xl">
+                <div class="w-40 h-40 rounded-full border-4 {{$item->cargo == 'Reitor' ? 'border-blue-900' : 'border-yellow-900'}} overflow-hidden mb-4 shadow-xl">
                     <img src="{{ asset('storage/' . $item->foto) }}" class="w-full h-full object-cover">
                 </div>
                 <h4 class="text-xs font-black uppercase text-blue-900 leading-tight">{{$item->nome_completo}}</h4>
                 <span class="text-[10px] font-bold text-orange-600 uppercase tracking-widest mt-1">{{$item->cargo}}</span>
             </div>
-            @elseif($item->cargo == 'Vice-Reitor Académico')
-            <div class="grid grid-cols-2 gap-4">
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-24 h-24 rounded-full border-2 border-cyan-500 overflow-hidden mb-2">
-                        <img src="{{ asset('storage/' . $item->foto) }}" class="w-full h-full object-cover">
-                    </div>
-                    <h4 class="text-[9px] font-bold uppercase text-blue-900 leading-none">{{$item->nome_completo}}</h4>
-                    <span class="text-[8px] font-bold text-cyan-600 uppercase mt-1">{{$item->cargo}}</span>
-                </div>
-                @elseif($item->cargo == 'Vice-Reitor Administrativo')
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-24 h-24 rounded-full border-2 border-orange-500 overflow-hidden mb-2">
-                        <img src="{{ asset('storage/' . $item->foto) }}"
-                            class="w-full h-full object-cover">
-                    </div>
-                    <h4 class="text-[9px] font-bold uppercase text-blue-900 leading-none">{{$item->nome_completo}}</h4>
-                    <span class="text-[8px] font-bold text-orange-600 uppercase mt-1">{{$item->cargo}}</span>
-                </div>
-                @endif
+            
             </div>
             @endforeach
         </div>
