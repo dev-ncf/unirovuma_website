@@ -194,7 +194,7 @@
     <section class="relative z-30 container mx-auto px-6 -mt-10 md:-mt-16">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
-            <a href="{{asset('edital-2027.pdf ')}}" target="_blank" rel="noopener noreferrer"
+            <a href="{{asset('edital-2027.pdf ')}}"  download
                 class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center text-center border-b-4 border-blue-900 hover:-translate-y-2 transition duration-300">
                 <div class="w-12 h-12 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-3"><i
                         data-lucide="graduation-cap"></i></div>
