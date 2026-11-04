@@ -344,7 +344,7 @@
                 <div class="flex flex-wrap justify-center items-start gap-8 md:gap-16 pt-2">
                     @foreach ($vices as $item)
                         <div class="flex flex-col items-center text-center max-w-[200px]">
-                            <div class="w-36 h-36 rounded-full border-4 border-yellow-900 overflow-hidden mb-4 shadow-xl">
+                            <div class="w-12 h-12 rounded-full border-4 border-yellow-900 overflow-hidden mb-4 shadow-xl">
                                 <img src="{{ asset('storage/' . $item->foto) }}" alt="{{ $item->nome_completo }}"
                                     class="w-full h-full object-cover">
                             </div>
