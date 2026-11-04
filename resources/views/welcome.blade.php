@@ -27,7 +27,7 @@
                                     class="inline w-5 h-5 mr-1 text-orange-400"></i> Inscrições abertas</strong>
                         </p>
                         <div class="flex flex-wrap gap-4 pt-2">
-                            <a href="#" target="_blank"
+                            <a href="{{ asset('edital-2027.pdf') }}" target="_blank" rel="noopener noreferrer"
                                 class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-black uppercase text-sm transition-all shadow-2xl flex items-center gap-2">
                                 Ver Edital e Informações <i data-lucide="external-link" class="w-4 h-4"></i>
                             </a>
@@ -121,7 +121,7 @@
                                 Até 05 de Maio de 2026.</span>
                         </p>
                         <div class="flex flex-wrap gap-4">
-                            <a href="{{ route('manutencao') }}"
+                            <a href="#" target="_blank" download="true"
                                 class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-xl flex items-center gap-2">
                                 <i data-lucide="file-text" class="w-4 h-4"></i> Ver Edital
                             </a>
@@ -194,7 +194,7 @@
     <section class="relative z-30 container mx-auto px-6 -mt-10 md:-mt-16">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
-            <a href="{{ route('manutencao') }}"
+            <a href="{{asset('edital-2027.pdf ')}}" target="_blank" rel="noopener noreferrer"
                 class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center text-center border-b-4 border-blue-900 hover:-translate-y-2 transition duration-300">
                 <div class="w-12 h-12 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-3"><i
                         data-lucide="graduation-cap"></i></div>
