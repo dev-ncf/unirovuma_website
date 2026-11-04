@@ -20,7 +20,7 @@ new #[Layout('components.layouts.app')] class extends Component {
         
         <!-- Voltar -->
         <div class="mb-6">
-            <a href="javascript:history.back()" class="text-xs font-bold text-blue-900 hover:text-orange-500 transition flex items-center gap-1">
+            <a href="javascript:history.back()" class="text-xs font-bold text-blue-900 hover:text-yellow-500 transition flex items-center gap-1">
                 <i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar à página anterior
             </a>
         </div>
@@ -28,7 +28,7 @@ new #[Layout('components.layouts.app')] class extends Component {
         <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-8 md:p-12 space-y-6">
             
             <div class="space-y-2 border-b pb-6">
-                <span class="bg-orange-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
+                <span class="bg-yellow-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
                     {{ $noticia->unidade->nome ?? 'UniRovuma' }}
                 </span>
                 <h1 class="text-2xl md:text-4xl font-black text-blue-900 tracking-tight mt-3">
@@ -40,7 +40,7 @@ new #[Layout('components.layouts.app')] class extends Component {
             </div>
 
             <!-- Resumo / Descrição em Destaque -->
-            <div class="p-4 rounded-xl bg-orange-50 border border-orange-100 text-orange-900 text-sm font-medium leading-relaxed">
+            <div class="p-4 rounded-xl bg-yellow-50 border border-yellow-100 text-yellow-900 text-sm font-medium leading-relaxed">
                 {{ $noticia->resumo }}
             </div>
 

@@ -82,12 +82,12 @@ new #[Layout('components.layouts.app')] class extends Component {
         <div class="mb-6 flex items-center justify-between">
             @if ($unidade)
                 <a href="{{ url('/unidades/' . $unidade->slug) }}"
-                    class="text-xs font-bold text-blue-900 hover:text-orange-500 transition flex items-center gap-1.5">
+                    class="text-xs font-bold text-blue-900 hover:text-yellow-500 transition flex items-center gap-1.5">
                     <i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar para {{ $unidade->nome }}
                 </a>
             @else
                 <a href="javascript:history.back()"
-                    class="text-xs font-bold text-blue-900 hover:text-orange-500 transition flex items-center gap-1.5">
+                    class="text-xs font-bold text-blue-900 hover:text-yellow-500 transition flex items-center gap-1.5">
                     <i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar à Página Anterior
                 </a>
             @endif
@@ -99,10 +99,10 @@ new #[Layout('components.layouts.app')] class extends Component {
 
         <!-- Cabeçalho do Projecto -->
         <div class="bg-gradient-to-r from-[#00225a] to-blue-900 rounded-3xl shadow-xl text-white p-8 md:p-12 mb-8 relative overflow-hidden">
-            <div class="absolute right-0 bottom-0 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute right-0 bottom-0 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
             <div class="relative z-10 space-y-4 max-w-3xl">
-                <span class="inline-block bg-orange-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
+                <span class="inline-block bg-yellow-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
                     Projecto de Inovação
                 </span>
 
@@ -112,7 +112,7 @@ new #[Layout('components.layouts.app')] class extends Component {
 
                 @if ($unidade)
                     <p class="text-xs text-blue-200 font-medium flex items-center gap-2 pt-1">
-                        <i data-lucide="building-2" class="w-4 h-4 text-orange-400"></i>
+                        <i data-lucide="building-2" class="w-4 h-4 text-yellow-400"></i>
                         Unidade: <span class="text-white font-bold">{{ $unidade->nome }}</span>
                     </p>
                 @endif
@@ -125,7 +125,7 @@ new #[Layout('components.layouts.app')] class extends Component {
             <!-- Descrição Completa -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 md:p-8">
                 <h2 class="text-lg font-bold text-blue-900 border-b pb-3 mb-4 flex items-center gap-2">
-                    <i data-lucide="file-text" class="w-5 h-5 text-orange-500"></i> Descrição do Projecto
+                    <i data-lucide="file-text" class="w-5 h-5 text-yellow-500"></i> Descrição do Projecto
                 </h2>
                 <div class="text-slate-700 text-sm leading-relaxed whitespace-pre-line">
                     {{ $projeto->descricao }}
@@ -141,9 +141,9 @@ new #[Layout('components.layouts.app')] class extends Component {
                 @if (count($grupos['imagens']) > 0)
                     <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 md:p-8">
                         <h2 class="text-lg font-bold text-blue-900 border-b pb-3 mb-6 flex items-center gap-2">
-                            <i data-lucide="image" class="w-5 h-5 text-orange-500"></i> 
+                            <i data-lucide="image" class="w-5 h-5 text-yellow-500"></i> 
                             Galeria de Imagens do Projecto 
-                            <span class="text-xs bg-orange-100 text-orange-700 font-bold px-2.5 py-0.5 rounded-full ml-2">
+                            <span class="text-xs bg-yellow-100 text-yellow-700 font-bold px-2.5 py-0.5 rounded-full ml-2">
                                 {{ count($grupos['imagens']) }} foto(s)
                             </span>
                         </h2>
@@ -159,7 +159,7 @@ new #[Layout('components.layouts.app')] class extends Component {
                                     <div class="p-3 bg-white flex items-center justify-between gap-2 border-t border-slate-100">
                                         
                                         <a href="{{ $img['url'] }}" target="_blank"
-                                            class="inline-flex items-center gap-1 text-[11px] font-bold text-orange-600 hover:text-orange-700 flex-shrink-0">
+                                            class="inline-flex items-center gap-1 text-[11px] font-bold text-yellow-600 hover:text-yellow-700 flex-shrink-0">
                                             Ampliar <i data-lucide="external-link" class="w-3 h-3"></i>
                                         </a>
                                     </div>
@@ -236,7 +236,7 @@ new #[Layout('components.layouts.app')] class extends Component {
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             @foreach ($grupos['outros'] as $outro)
                                 <a href="{{ $outro['url'] }}" target="_blank"
-                                    class="flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-orange-500 transition">
+                                    class="flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-yellow-500 transition">
                                     <div class="flex items-center gap-3 overflow-hidden">
                                         <div class="w-10 h-10 rounded-xl bg-slate-200 text-slate-700 flex items-center justify-center font-black text-xs uppercase flex-shrink-0">
                                             {{ $outro['extensao'] }}

@@ -23,7 +23,7 @@
 
             <!-- Coluna 2: Endereços (Extraído do código original) -->
             <div>
-                <h4 class="text-orange-400 font-bold uppercase mb-6 flex items-center gap-2">
+                <h4 class="text-yellow-400 font-bold uppercase mb-6 flex items-center gap-2">
                     <i data-lucide="map-pin" class="w-5 h-5"></i> Onde Estamos
                 </h4>
                 <ul class="space-y-4 text-sm text-slate-400">
@@ -44,7 +44,7 @@
 
             <!-- Coluna 3: Links Rápidos -->
             <div>
-                <h4 class="text-orange-400 font-bold uppercase mb-6 flex items-center gap-2">
+                <h4 class="text-yellow-400 font-bold uppercase mb-6 flex items-center gap-2">
                     <i data-lucide="link" class="w-5 h-5"></i> Links Rápidos
                 </h4>
                 <ul class="space-y-2 text-sm text-slate-400">
@@ -58,13 +58,13 @@
 
             <!-- Coluna 4: Newsletter/Boletim -->
             <div>
-                <h4 class="text-orange-400 font-bold uppercase mb-6 flex items-center gap-2">
+                <h4 class="text-yellow-400 font-bold uppercase mb-6 flex items-center gap-2">
                     <i data-lucide="mail-check" class="w-5 h-5"></i> Informativo
                 </h4>
                 <p class="text-sm text-slate-400 mb-4">Receba as últimas notícias diretamente no seu e-mail.</p>
                 <form class="flex flex-col gap-2">
-                    <input type="email" placeholder="Seu e-mail" class="bg-slate-800 border-none rounded p-3 text-sm focus:ring-2 focus:ring-orange-500">
-                    <button class="bg-orange-600 hover:bg-orange-700 font-bold py-2 rounded transition">Subscrever</button>
+                    <input type="email" placeholder="Seu e-mail" class="bg-slate-800 border-none rounded p-3 text-sm focus:ring-2 focus:ring-yellow-500">
+                    <button class="bg-yellow-600 hover:bg-yellow-700 font-bold py-2 rounded transition">Subscrever</button>
                 </form>
             </div>
         </div>
@@ -72,7 +72,7 @@
         <!-- Copyright -->
         <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 gap-4">
             <p>Universidade Rovuma © 2015 - {{ date('Y') }}. Todos os direitos reservados.</p>
-            <p class="flex items-center gap-1">Desenvolvido por <span class="text-white font-bold">DTIC's</span> <i data-lucide="code-2" class="w-4 h-4 text-orange-500"></i></p>
+            <p class="flex items-center gap-1">Desenvolvido por <span class="text-white font-bold">DTIC's</span> <i data-lucide="code-2" class="w-4 h-4 text-yellow-500"></i></p>
         </div>
     </div>
 </footer>

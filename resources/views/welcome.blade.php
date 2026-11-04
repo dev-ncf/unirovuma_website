@@ -195,7 +195,7 @@
                 <div class="w-12 h-12 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-3"><i
                         data-lucide="graduation-cap"></i></div>
                 <span class="text-xs font-black uppercase text-blue-900">Graduação</span>
-                <span class="text-[10px] text-slate-500 mt-1 uppercase tracking-tighter">Edital 2026</span>
+                <span class="text-[10px] text-slate-500 mt-1 uppercase tracking-tighter">Edital 2027</span>
             </a>
 
             <a href="{{route('manutencao')}}"
