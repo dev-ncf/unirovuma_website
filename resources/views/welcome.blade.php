@@ -322,7 +322,6 @@
                 <span class="text-[10px] font-bold text-orange-600 uppercase tracking-widest mt-1">{{$item->cargo}}</span>
             </div>
             
-            </div>
             @endforeach
         </div>
     </section>
