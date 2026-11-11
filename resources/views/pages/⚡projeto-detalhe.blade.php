@@ -120,14 +120,14 @@ new #[Layout('components.layouts.app')] class extends Component {
                         :class="tab === 'sobre' ? 'bg-yellow-500 text-[#00225a] font-bold shadow-md' :
                             'text-blue-100 hover:bg-white/10 font-medium'"
                         class="px-4 py-2.5 rounded-xl text-xs md:text-sm whitespace-nowrap transition flex items-center gap-2">
-                        <i data-lucide="info" class="w-4 h-4"></i> 1. Sobre o Projecto
+                        <i data-lucide="info" class="w-4 h-4"></i> Sobre o Projecto
                     </button>
 
                     <button @click="tab = 'cursos'"
                         :class="tab === 'cursos' ? 'bg-yellow-500 text-[#00225a] font-bold shadow-md' :
                             'text-blue-100 hover:bg-white/10 font-medium'"
                         class="px-4 py-2.5 rounded-xl text-xs md:text-sm whitespace-nowrap transition flex items-center gap-2">
-                        <i data-lucide="graduation-cap" class="w-4 h-4"></i> 2. Cursos Desenvolvidos
+                        <i data-lucide="graduation-cap" class="w-4 h-4"></i> Cursos Desenvolvidos
                         @if (!empty($projeto->cursos_desenvolvidos))
                             <span class="bg-white/20 px-1.5 py-0.5 rounded-full text-[10px]">
                                 {{ count($projeto->cursos_desenvolvidos) }}
@@ -139,14 +139,14 @@ new #[Layout('components.layouts.app')] class extends Component {
                         :class="tab === 'laboratorio' ? 'bg-yellow-500 text-[#00225a] font-bold shadow-md' :
                             'text-blue-100 hover:bg-white/10 font-medium'"
                         class="px-4 py-2.5 rounded-xl text-xs md:text-sm whitespace-nowrap transition flex items-center gap-2">
-                        <i data-lucide="flask-conical" class="w-4 h-4"></i> 3. Laboratório Desenvolvido
+                        <i data-lucide="flask-conical" class="w-4 h-4"></i> Laboratório Desenvolvido
                     </button>
 
                     <button @click="tab = 'atividades'"
                         :class="tab === 'atividades' ? 'bg-yellow-500 text-[#00225a] font-bold shadow-md' :
                             'text-blue-100 hover:bg-white/10 font-medium'"
                         class="px-4 py-2.5 rounded-xl text-xs md:text-sm whitespace-nowrap transition flex items-center gap-2">
-                        <i data-lucide="calendar" class="w-4 h-4"></i> 4. Notícias & Actividades
+                        <i data-lucide="calendar" class="w-4 h-4"></i> Notícias & Actividades
                         @if (!empty($projeto->atividades))
                             <span class="bg-white/20 px-1.5 py-0.5 rounded-full text-[10px]">
                                 {{ count($projeto->atividades) }}
