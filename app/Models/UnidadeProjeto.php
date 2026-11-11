@@ -10,7 +10,11 @@ class UnidadeProjeto extends Model
     //
     protected $guarded = [];
      protected $casts = [
-        'anexos' => 'array', // Essencial para múltiplos ficheiros
+        'anexos' => 'array', 
+        'cursos_desenvolvidos' => 'array',
+        'laboratorio' => 'array',
+        'atividades' => 'array',
+        'tem_estrutura_completa' => 'boolean',
     ];
 
     public function unidade(): BelongsTo {
