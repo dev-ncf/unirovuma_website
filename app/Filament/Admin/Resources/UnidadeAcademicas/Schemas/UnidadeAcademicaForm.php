@@ -196,7 +196,7 @@ class UnidadeAcademicaForm
                                                 Repeater::make('cursos_desenvolvidos')
                                                     ->label('Cursos')
                                                     ->schema([
-                                                        TextInput::make('nome')->label('Nome da Disciplina/Curso')->required(),
+                                                        TextInput::make('nome')->label('Nome da Curso')->required(),
                                                         TextInput::make('codigo')->label('Código (Ex: FAEDEMALEE-302-A)')->required(),
                                                         TextInput::make('nivel')->label('Nível')->default('Nível 3'),
                                                         TextInput::make('ano')->label('Ano')->default('3.º ano'),
@@ -206,6 +206,16 @@ class UnidadeAcademicaForm
                                                         TextInput::make('pre_requisitos')->label('Pré-requisitos')->columnSpanFull(),
                                                         Textarea::make('resumo')->label('Ementa / Breve Descrição')->rows(2)->columnSpanFull(),
                                                         Textarea::make('objectivos')->label('Objectivos Principais (1 por linha)')->rows(3)->columnSpanFull(),
+
+                                                        FileUpload::make('fotos')
+                                                            ->label('Fotografias do Curso')
+                                                            ->image()
+                                                            ->multiple()
+                                                            ->reorderable()
+                                                            ->disk('public')
+                                                            ->directory('projetos-cursos')
+                                                            ->columnSpanFull(),
+
                                                         FileUpload::make('plano_pdf')
                                                             ->label('Ficheiro do Plano Temático (PDF/Word)')
                                                             ->acceptedFileTypes(['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'])

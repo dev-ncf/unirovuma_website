@@ -352,8 +352,8 @@ new #[Layout('components.layouts.app')] class extends Component {
                 <div x-show="tab === 'cursos'" x-transition class="space-y-6">
                     <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 md:p-8">
                         <h2 class="text-xl font-bold text-blue-900 border-b pb-4 mb-2 flex items-center gap-2">
-                            <i data-lucide="book-open" class="w-6 h-6 text-yellow-500"></i> Cursos & Disciplinas
-                            Desenvolvidas
+                            <i data-lucide="book-open" class="w-6 h-6 text-yellow-500"></i> Cursos
+                            Desenvolvidos
                         </h2>
                         <p class="text-xs text-slate-500 mb-8">
                             Consulte a ficha técnica de cada disciplina concebida no âmbito do projecto e descarregue o
@@ -388,7 +388,8 @@ new #[Layout('components.layouts.app')] class extends Component {
                                                 </div>
                                                 <div><span class="text-slate-400">Ano/Semestre:</span> <span
                                                         class="font-bold text-slate-700">{{ $curso['ano'] ?? '-' }}
-                                                        ({{ $curso['semestre'] ?? '-' }})</span></div>
+                                                        ({{ $curso['semestre'] ?? '-' }})
+                                                    </span></div>
                                                 <div><span class="text-slate-400">Créditos:</span> <span
                                                         class="font-bold text-slate-700">{{ $curso['creditos'] ?? '-' }}</span>
                                                 </div>
@@ -411,6 +412,42 @@ new #[Layout('components.layouts.app')] class extends Component {
                                                     <div
                                                         class="text-xs text-slate-600 leading-relaxed whitespace-pre-line bg-yellow-50/60 p-3.5 rounded-xl border border-yellow-200/60">
                                                         {{ $curso['objectivos'] }}
+                                                    </div>
+                                                </div>
+                                            @endif
+
+                                            <!-- Galeria de Fotografias do Curso -->
+                                            @if (!empty($curso['fotos']) && is_array($curso['fotos']))
+                                                <div class="mb-6">
+                                                    <h4
+                                                        class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+                                                        <i data-lucide="image"
+                                                            class="w-3.5 h-3.5 text-yellow-500"></i>
+                                                        Fotografias do Curso
+                                                        <span
+                                                            class="text-[10px] bg-yellow-100 text-yellow-800 font-bold px-2 py-0.5 rounded-full">
+                                                            {{ count($curso['fotos']) }}
+                                                        </span>
+                                                    </h4>
+
+                                                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                                                        @foreach ($curso['fotos'] as $foto)
+                                                            <a href="{{ asset('storage/' . $foto) }}" target="_blank"
+                                                                class="group relative aspect-video rounded-xl overflow-hidden border border-slate-200 bg-slate-100 block shadow-sm">
+                                                                <img src="{{ asset('storage/' . $foto) }}"
+                                                                    alt="{{ $curso['nome'] ?? 'Fotografia do curso' }}"
+                                                                    loading="lazy"
+                                                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                                                                <div
+                                                                    class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
+                                                                    <span
+                                                                        class="opacity-0 group-hover:opacity-100 transition bg-white/90 text-blue-950 p-1.5 rounded-lg shadow-sm">
+                                                                        <i data-lucide="external-link"
+                                                                            class="w-3.5 h-3.5"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        @endforeach
                                                     </div>
                                                 </div>
                                             @endif
